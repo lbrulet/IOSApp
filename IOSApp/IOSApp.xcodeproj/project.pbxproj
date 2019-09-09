@@ -99,9 +99,10 @@
 		9E4B36352326469C00608C32 /* IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				9E4B3669232648A500608C32 /* ViewModel */,
+				9E4B36682326489B00608C32 /* View */,
+				9E4B36672326488500608C32 /* Model */,
 				9E4B36362326469C00608C32 /* AppDelegate.swift */,
-				9E4B36382326469C00608C32 /* ViewController.swift */,
-				9E4B363A2326469C00608C32 /* Main.storyboard */,
 				9E4B36402326469D00608C32 /* Assets.xcassets */,
 				9E4B36422326469D00608C32 /* LaunchScreen.storyboard */,
 				9E4B36452326469D00608C32 /* Info.plist */,
@@ -126,6 +127,29 @@
 				9E4B365B2326469D00608C32 /* Info.plist */,
 			);
 			path = IOSAppUITests;
+			sourceTree = "<group>";
+		};
+		9E4B36672326488500608C32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E4B36682326489B00608C32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B363A2326469C00608C32 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E4B3669232648A500608C32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B36382326469C00608C32 /* ViewController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
