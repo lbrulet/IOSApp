@@ -11,9 +11,11 @@ import Foundation
 struct Muscle {
     var image:String
     var label:String
-
-    init(image:String, label:String) {
+    var exercices:[Exercice]
+    
+    init(image:String, label:String, exercices:[Exercice]) {
         self.image = image
         self.label = label
+        self.exercices = exercices
     }
 }

@@ -16,19 +16,24 @@ struct MuscleViewModel {
         return muscles.count
     }
     
+    func countExercice(index:Int) -> Int {
+        return muscles[index].exercices.count
+    }
+    
     init() {
         populateMuscles()
     }
     
     private mutating func populateMuscles() {
-        muscles.append(Muscle(image: "back2", label: "B A C K"))
-        muscles.append(Muscle(image: "biceps2", label: "B I C E P S"))
+        muscles.append(Muscle(image: "back2", label: "B A C K", exercices: [Exercice(label: "Traction"), Exercice(label: "Pull down")]))
+        muscles.append(Muscle(image: "biceps2", label: "B I C E P S", exercices: [Exercice(label: "Curl bar"), Exercice(label: "Curl dumbell")]))
     }
 
-    func getMuscle(byIndex index:Int) -> (image:UIImage?, label:String) {
+    func getMuscle(byIndex index:Int) -> (image:UIImage?, label:String, exercices:[Exercice]) {
         let image = UIImage(named: muscles[index].image)
         let label = muscles[index].label
-        
-        return (image, label)
+        let exercice = muscles[index].exercices
+
+        return (image, label, exercice)
     }
 }
