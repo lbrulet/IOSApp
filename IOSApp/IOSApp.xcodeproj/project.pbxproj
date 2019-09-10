@@ -19,6 +19,7 @@
 		9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B367A23265C9100608C32 /* MuscleViewModel.swift */; };
 		C9E8008223276EA100404378 /* Exerice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008123276EA100404378 /* Exerice.swift */; };
 		C9E800842327720300404378 /* ExerciceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E800832327720300404378 /* ExerciceTableViewController.swift */; };
+		C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008523279AF200404378 /* WeightTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9E4B367A23265C9100608C32 /* MuscleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewModel.swift; sourceTree = "<group>"; };
 		C9E8008123276EA100404378 /* Exerice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exerice.swift; sourceTree = "<group>"; };
 		C9E800832327720300404378 /* ExerciceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTableViewController.swift; sourceTree = "<group>"; };
+		C9E8008523279AF200404378 /* WeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				9E4B36742326557E00608C32 /* DashboardTableViewController.swift */,
 				9E4B367A23265C9100608C32 /* MuscleViewModel.swift */,
 				C9E800832327720300404378 /* ExerciceTableViewController.swift */,
+				C9E8008523279AF200404378 /* WeightTableViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */,
+				C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */,
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
 				9E4B36752326557E00608C32 /* DashboardTableViewController.swift in Sources */,
 				9E4B363F2326469C00608C32 /* IOSApp.xcdatamodeld in Sources */,
