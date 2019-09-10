@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct MuscleVieWModel {
+struct MuscleViewModel {
     private var muscles:[Muscle] = []
     
     var count:Int {
