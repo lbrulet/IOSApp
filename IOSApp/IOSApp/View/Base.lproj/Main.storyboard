@@ -42,16 +42,16 @@
             </objects>
             <point key="canvasLocation" x="-1919" y="803"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="lTU-Aq-Ab6">
             <objects>
-                <viewController id="4md-S6-E8u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qqc-YO-Vn8">
+                <viewController id="4md-S6-E8u" customClass="SettingsViewController" customModule="IOSApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qqc-YO-Vn8" customClass="UISettin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79v-9d-qJ7" propertyAccessControl="none">
-                                <rect key="frame" x="122" y="102" width="131" height="30"/>
+                                <rect key="frame" x="27" y="102" width="322" height="30"/>
                                 <color key="backgroundColor" red="0.20784313725490197" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Delete my account">
@@ -59,24 +59,24 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="roundedButton:" destination="tX6-3e-dBw" eventType="touchUpInside" id="ChW-Bx-KgP"/>
+                                    <action selector="showAlert:" destination="4md-S6-E8u" eventType="touchUpInside" id="D73-Gp-5Vy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="79v-9d-qJ7" firstAttribute="top" secondItem="YYQ-7P-7jQ" secondAttribute="top" constant="38" id="Tbx-g8-SSc"/>
-                            <constraint firstItem="YYQ-7P-7jQ" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="79v-9d-qJ7" secondAttribute="bottom" constant="486" id="YHW-22-s3x"/>
-                            <constraint firstItem="79v-9d-qJ7" firstAttribute="leading" secondItem="YYQ-7P-7jQ" secondAttribute="leading" constant="122" id="fb5-DY-8EO"/>
-                            <constraint firstItem="YYQ-7P-7jQ" firstAttribute="trailing" secondItem="79v-9d-qJ7" secondAttribute="trailing" constant="122" id="uLi-Vv-eYL"/>
+                            <constraint firstItem="79v-9d-qJ7" firstAttribute="top" secondItem="YYQ-7P-7jQ" secondAttribute="top" constant="38" id="TmB-fO-c2Y"/>
+                            <constraint firstItem="YYQ-7P-7jQ" firstAttribute="trailing" secondItem="79v-9d-qJ7" secondAttribute="trailing" constant="26" id="auH-Fm-EXx"/>
+                            <constraint firstItem="79v-9d-qJ7" firstAttribute="leading" secondItem="YYQ-7P-7jQ" secondAttribute="leading" constant="27" id="n8j-Fb-M5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YYQ-7P-7jQ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="knk-Y2-B1F"/>
+                    <navigationItem key="navigationItem" title="Settings" id="knk-Y2-B1F"/>
                 </viewController>
                 <exit id="tX6-3e-dBw" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdY-YB-jcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,7 +152,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back2" translatesAutoresizingMaskIntoConstraints="NO" id="TEU-Sf-ctq">
-                                            <rect key="frame" x="26" y="5" width="320" height="94"/>
+                                            <rect key="frame" x="26" y="5" width="320" height="94.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s47-Kp-IVE">
                                             <rect key="frame" x="40" y="30" width="291" height="44"/>
@@ -208,7 +208,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svf-gB-z6B">
-                                            <rect key="frame" x="16" y="20" width="339" height="49"/>
+                                            <rect key="frame" x="16" y="20" width="339" height="49.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -256,7 +256,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haa-zg-N5L">
-                                            <rect key="frame" x="156.5" y="10.5" width="62.5" height="22.5"/>
+                                            <rect key="frame" x="156.5" y="11" width="62.5" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
