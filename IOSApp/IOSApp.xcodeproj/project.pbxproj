@@ -24,6 +24,7 @@
 		C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F14232DE9720037A582 /* DateViewController.swift */; };
 		C9E46F17232DF7FA0037A582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F16232DF7FA0037A582 /* User.swift */; };
 		C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F18232DF93A0037A582 /* UserViewController.swift */; };
+		C9E46F1B232E09340037A582 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F1A232E09340037A582 /* app.swift */; };
 		C9E8008223276EA100404378 /* Exerice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008123276EA100404378 /* Exerice.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		C9E46F14232DE9720037A582 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		C9E46F16232DF7FA0037A582 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C9E46F18232DF93A0037A582 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		C9E46F1A232E09340037A582 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
 		C9E8008123276EA100404378 /* Exerice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exerice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 				C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */,
 				C9E46F14232DE9720037A582 /* DateViewController.swift */,
 				C9E46F18232DF93A0037A582 /* UserViewController.swift */,
+				C9E46F1A232E09340037A582 /* app.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
 				C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */,
 				C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */,
+				C9E46F1B232E09340037A582 /* app.swift in Sources */,
 				9E4B363F2326469C00608C32 /* IOSApp.xcdatamodeld in Sources */,
 				C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */,
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
