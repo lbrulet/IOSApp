@@ -12,6 +12,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
 
     private let viewModel = MuscleViewModel()
     private let dateModel = DateViewController()
+    private let userModel = UserViewController()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userImage: UIImageView!
@@ -24,6 +25,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        userImage.image = userModel.getImage()
         userImage.layer.cornerRadius = userImage.frame.size.height / 2
         dateView.text = dateModel.getDate()
     }

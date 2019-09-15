@@ -22,6 +22,8 @@
 		C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */; };
 		C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */; };
 		C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F14232DE9720037A582 /* DateViewController.swift */; };
+		C9E46F17232DF7FA0037A582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F16232DF7FA0037A582 /* User.swift */; };
+		C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F18232DF93A0037A582 /* UserViewController.swift */; };
 		C9E8008223276EA100404378 /* Exerice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008123276EA100404378 /* Exerice.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcericeViewController.swift; sourceTree = "<group>"; };
 		C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C9E46F14232DE9720037A582 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		C9E46F16232DF7FA0037A582 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9E46F18232DF93A0037A582 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		C9E8008123276EA100404378 /* Exerice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exerice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +154,7 @@
 			children = (
 				9E4B3676232657C100608C32 /* Muscle.swift */,
 				C9E8008123276EA100404378 /* Exerice.swift */,
+				C9E46F16232DF7FA0037A582 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */,
 				C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */,
 				C9E46F14232DE9720037A582 /* DateViewController.swift */,
+				C9E46F18232DF93A0037A582 /* UserViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */,
 				C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */,
 				8681610A232CBEA000F0ABCE /* ProfileViewController.swift in Sources */,
+				C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */,
 				C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */,
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
 				C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */,
@@ -319,6 +326,7 @@
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,
 				2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */,
+				C9E46F17232DF7FA0037A582 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
