@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum Gender {
-    case male, female
+enum Gender:String {
+    case male = "Male", female = "Female"
 }
 
 struct User {
@@ -27,5 +27,25 @@ struct User {
         self.weight = weight
         self.size = size
         self.gender = gender
+    }
+    
+    mutating func setWeight(weight: Float) {
+        self.weight = weight
+    }
+    
+    mutating func setSize(size: Float) {
+        self.size = size
+    }
+    
+    mutating func setGender(gender: Gender) {
+        self.gender = gender
+    }
+    
+    mutating func setFirstName(firstName: String) {
+        self.firstName = firstName
+    }
+    
+    mutating func setLastName(lastName: String) {
+        self.lastName = lastName
     }
 }
