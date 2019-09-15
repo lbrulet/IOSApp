@@ -15,12 +15,13 @@
 		9E4B36442326469D00608C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B36422326469D00608C32 /* LaunchScreen.storyboard */; };
 		9E4B364F2326469D00608C32 /* IOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B364E2326469D00608C32 /* IOSAppTests.swift */; };
 		9E4B365A2326469D00608C32 /* IOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36592326469D00608C32 /* IOSAppUITests.swift */; };
-		9E4B36752326557E00608C32 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36742326557E00608C32 /* DashboardTableViewController.swift */; };
 		9E4B3677232657C100608C32 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B3676232657C100608C32 /* Muscle.swift */; };
 		9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B367A23265C9100608C32 /* MuscleViewModel.swift */; };
+		C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */; };
+		C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */; };
+		C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */; };
+		C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F14232DE9720037A582 /* DateViewController.swift */; };
 		C9E8008223276EA100404378 /* Exerice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008123276EA100404378 /* Exerice.swift */; };
-		C9E800842327720300404378 /* ExerciceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E800832327720300404378 /* ExerciceTableViewController.swift */; };
-		C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008523279AF200404378 /* WeightTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +56,13 @@
 		9E4B36552326469D00608C32 /* IOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4B36592326469D00608C32 /* IOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppUITests.swift; sourceTree = "<group>"; };
 		9E4B365B2326469D00608C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E4B36742326557E00608C32 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		9E4B3676232657C100608C32 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		9E4B367A23265C9100608C32 /* MuscleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewModel.swift; sourceTree = "<group>"; };
+		C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcericeViewController.swift; sourceTree = "<group>"; };
+		C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C9E46F14232DE9720037A582 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		C9E8008123276EA100404378 /* Exerice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exerice.swift; sourceTree = "<group>"; };
-		C9E800832327720300404378 /* ExerciceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTableViewController.swift; sourceTree = "<group>"; };
-		C9E8008523279AF200404378 /* WeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,11 +163,12 @@
 		9E4B3669232648A500608C32 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9E4B36742326557E00608C32 /* DashboardTableViewController.swift */,
 				9E4B367A23265C9100608C32 /* MuscleViewModel.swift */,
-				C9E800832327720300404378 /* ExerciceTableViewController.swift */,
-				C9E8008523279AF200404378 /* WeightTableViewController.swift */,
 				2D6F264E2327B53A00520D52 /* SettingsViewController.swift */,
+				C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */,
+				C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */,
+				C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */,
+				C9E46F14232DE9720037A582 /* DateViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -302,11 +305,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */,
-				C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */,
+				C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */,
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
-				9E4B36752326557E00608C32 /* DashboardTableViewController.swift in Sources */,
+				C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */,
+				C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */,
 				9E4B363F2326469C00608C32 /* IOSApp.xcdatamodeld in Sources */,
-				C9E800842327720300404378 /* ExerciceTableViewController.swift in Sources */,
+				C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */,
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,
 				2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */,
