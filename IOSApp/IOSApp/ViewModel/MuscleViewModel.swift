@@ -23,7 +23,7 @@ struct MuscleViewModel {
     init() {
         populateMuscles()
     }
-    
+    	
     private mutating func populateMuscles() {
         muscles.append(Muscle(image: "back2", label: "B A C K", exercices: [Exercice(label: "Traction"), Exercice(label: "Pull down")]))
         muscles.append(Muscle(image: "biceps2", label: "B I C E P S", exercices: [Exercice(label: "Curl bar"), Exercice(label: "Curl dumbell")]))
