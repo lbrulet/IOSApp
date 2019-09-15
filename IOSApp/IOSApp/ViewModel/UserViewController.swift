@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct UserViewController {
+public struct UserViewController {
     private var user: User
     
     init() {
@@ -38,6 +38,10 @@ struct UserViewController {
     
     mutating func setLastName(lastName: String) {
         self.user.setLastName(lastName: lastName)
+    }
+    
+    mutating func newRecords(label: String, weight: Int) {
+        self.user.newRecords(label: label, weight: weight)
     }
     
     func getUser() -> User {

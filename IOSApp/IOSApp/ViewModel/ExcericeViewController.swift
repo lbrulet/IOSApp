@@ -37,7 +37,6 @@ class ExcericeViewController: UIViewController, UITableViewDelegate, UITableView
         
         if let titleView = titleView {
             let currentExercice = exercices[indexPath.row]
-            print(currentExercice.label)    
             titleView.text = currentExercice.label
         }
         
@@ -45,10 +44,12 @@ class ExcericeViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedRow = self.tableView.indexPathForSelectedRow
+            else {return}
         let backItem = UIBarButtonItem()
         backItem.title = "Choose your exercice"
         navigationItem.backBarButtonItem = backItem
         let destination = segue.destination as? WeightViewController
-        destination?.selectedMuscle = selectedMuscle?.image
+        destination?.selectedMuscle = (image: selectedMuscle?.image, exercice: exercices[selectedRow.row].label)
     }
 }

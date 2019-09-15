@@ -10,8 +10,8 @@ import UIKit
 
 class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var weights:[String] = ["5 kgs", "10 kgs", "15 kgs", "20 kgs", "25 kgs", "30 kgs"]
-    var selectedMuscle:UIImage?
+    var weights:[String] = ["5", "10", "15", "20", "25", "30"]
+    var selectedMuscle:(image: UIImage?, exercice: String)?
     let cellSpacingHeight: CGFloat = 20
     private let height: CGFloat = 50.0
     
@@ -24,7 +24,7 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.dataSource = self
         self.imageView.layer.cornerRadius = 20
         if let selectedMuscle = selectedMuscle {
-            imageView.image = selectedMuscle
+            imageView.image = selectedMuscle.image
         }
     }
     
@@ -33,17 +33,12 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return weights.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.height
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WGSCell", for: indexPath)
         let label = cell.viewWithTag(1000) as? UILabel
         
-        cell.contentView.layoutMargins.bottom = 10
         if let label = label {
-            let text = weights[indexPath.row]
+            let text = weights[indexPath.row] + " kgs"
             label.text = text
             cell.layer.masksToBounds = true
             cell.layer.cornerRadius = 20
@@ -51,14 +46,12 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.layer.borderColor = UIColor.black.cgColor
         }
         return cell
-    }    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedMuscle = selectedMuscle {
+            user.newRecords(label: selectedMuscle.exercice, weight: Int(weights[indexPath.row])!)
+            print(user.getUser().weights)
+        }
+    }
 }
