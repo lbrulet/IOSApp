@@ -18,6 +18,9 @@
 		9E4B365A2326469D00608C32 /* IOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36592326469D00608C32 /* IOSAppUITests.swift */; };
 		9E4B3677232657C100608C32 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B3676232657C100608C32 /* Muscle.swift */; };
 		9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B367A23265C9100608C32 /* MuscleViewModel.swift */; };
+		C9E31BCA232F5A8E00AFE854 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BC9232F5A8E00AFE854 /* UserTests.swift */; };
+		C9E31BCC232F634200AFE854 /* ExerciceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCB232F634200AFE854 /* ExerciceTests.swift */; };
+		C9E31BCE232F63D300AFE854 /* MuscleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCD232F63D300AFE854 /* MuscleTests.swift */; };
 		C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */; };
 		C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */; };
 		C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */; };
@@ -63,6 +66,9 @@
 		9E4B365B2326469D00608C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4B3676232657C100608C32 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		9E4B367A23265C9100608C32 /* MuscleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewModel.swift; sourceTree = "<group>"; };
+		C9E31BC9232F5A8E00AFE854 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		C9E31BCB232F634200AFE854 /* ExerciceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTests.swift; sourceTree = "<group>"; };
+		C9E31BCD232F63D300AFE854 /* MuscleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleTests.swift; sourceTree = "<group>"; };
 		C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcericeViewController.swift; sourceTree = "<group>"; };
 		C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 			children = (
 				9E4B364E2326469D00608C32 /* IOSAppTests.swift */,
 				9E4B36502326469D00608C32 /* Info.plist */,
+				C9E31BC9232F5A8E00AFE854 /* UserTests.swift */,
+				C9E31BCB232F634200AFE854 /* ExerciceTests.swift */,
+				C9E31BCD232F63D300AFE854 /* MuscleTests.swift */,
 			);
 			path = IOSAppTests;
 			sourceTree = "<group>";
@@ -338,6 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E31BCE232F63D300AFE854 /* MuscleTests.swift in Sources */,
+				C9E31BCC232F634200AFE854 /* ExerciceTests.swift in Sources */,
+				C9E31BCA232F5A8E00AFE854 /* UserTests.swift in Sources */,
 				9E4B364F2326469D00608C32 /* IOSAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S45TM688G;
 				INFOPLIST_FILE = IOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S45TM688G;
 				INFOPLIST_FILE = IOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
