@@ -16,12 +16,19 @@
 		9E4B36442326469D00608C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B36422326469D00608C32 /* LaunchScreen.storyboard */; };
 		9E4B364F2326469D00608C32 /* IOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B364E2326469D00608C32 /* IOSAppTests.swift */; };
 		9E4B365A2326469D00608C32 /* IOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36592326469D00608C32 /* IOSAppUITests.swift */; };
-		9E4B36752326557E00608C32 /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36742326557E00608C32 /* DashboardTableViewController.swift */; };
 		9E4B3677232657C100608C32 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B3676232657C100608C32 /* Muscle.swift */; };
 		9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B367A23265C9100608C32 /* MuscleViewModel.swift */; };
+		C9E31BCA232F5A8E00AFE854 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BC9232F5A8E00AFE854 /* UserTests.swift */; };
+		C9E31BCC232F634200AFE854 /* ExerciceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCB232F634200AFE854 /* ExerciceTests.swift */; };
+		C9E31BCE232F63D300AFE854 /* MuscleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCD232F63D300AFE854 /* MuscleTests.swift */; };
+		C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */; };
+		C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */; };
+		C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */; };
+		C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F14232DE9720037A582 /* DateViewController.swift */; };
+		C9E46F17232DF7FA0037A582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F16232DF7FA0037A582 /* User.swift */; };
+		C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F18232DF93A0037A582 /* UserViewController.swift */; };
+		C9E46F1B232E09340037A582 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E46F1A232E09340037A582 /* app.swift */; };
 		C9E8008223276EA100404378 /* Exerice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008123276EA100404378 /* Exerice.swift */; };
-		C9E800842327720300404378 /* ExerciceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E800832327720300404378 /* ExerciceTableViewController.swift */; };
-		C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8008523279AF200404378 /* WeightTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +64,19 @@
 		9E4B36552326469D00608C32 /* IOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4B36592326469D00608C32 /* IOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAppUITests.swift; sourceTree = "<group>"; };
 		9E4B365B2326469D00608C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E4B36742326557E00608C32 /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
 		9E4B3676232657C100608C32 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		9E4B367A23265C9100608C32 /* MuscleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewModel.swift; sourceTree = "<group>"; };
+		C9E31BC9232F5A8E00AFE854 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		C9E31BCB232F634200AFE854 /* ExerciceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTests.swift; sourceTree = "<group>"; };
+		C9E31BCD232F63D300AFE854 /* MuscleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleTests.swift; sourceTree = "<group>"; };
+		C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcericeViewController.swift; sourceTree = "<group>"; };
+		C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C9E46F14232DE9720037A582 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		C9E46F16232DF7FA0037A582 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9E46F18232DF93A0037A582 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		C9E46F1A232E09340037A582 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
 		C9E8008123276EA100404378 /* Exerice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exerice.swift; sourceTree = "<group>"; };
-		C9E800832327720300404378 /* ExerciceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTableViewController.swift; sourceTree = "<group>"; };
-		C9E8008523279AF200404378 /* WeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +144,9 @@
 			children = (
 				9E4B364E2326469D00608C32 /* IOSAppTests.swift */,
 				9E4B36502326469D00608C32 /* Info.plist */,
+				C9E31BC9232F5A8E00AFE854 /* UserTests.swift */,
+				C9E31BCB232F634200AFE854 /* ExerciceTests.swift */,
+				C9E31BCD232F63D300AFE854 /* MuscleTests.swift */,
 			);
 			path = IOSAppTests;
 			sourceTree = "<group>";
@@ -148,6 +165,7 @@
 			children = (
 				9E4B3676232657C100608C32 /* Muscle.swift */,
 				C9E8008123276EA100404378 /* Exerice.swift */,
+				C9E46F16232DF7FA0037A582 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,12 +181,15 @@
 		9E4B3669232648A500608C32 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9E4B36742326557E00608C32 /* DashboardTableViewController.swift */,
 				9E4B367A23265C9100608C32 /* MuscleViewModel.swift */,
-				C9E800832327720300404378 /* ExerciceTableViewController.swift */,
-				C9E8008523279AF200404378 /* WeightTableViewController.swift */,
 				2D6F264E2327B53A00520D52 /* SettingsViewController.swift */,
 				86816109232CBEA000F0ABCE /* ProfileViewController.swift */,
+				C9E3C98F232CB3F80070C9C7 /* WeightViewController.swift */,
+				C9E3C991232CD5810070C9C7 /* ExcericeViewController.swift */,
+				C9E3C993232CE2560070C9C7 /* DashboardViewController.swift */,
+				C9E46F14232DE9720037A582 /* DateViewController.swift */,
+				C9E46F18232DF93A0037A582 /* UserViewController.swift */,
+				C9E46F1A232E09340037A582 /* app.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,13 +328,18 @@
 				9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */,
 				C9E8008623279AF200404378 /* WeightTableViewController.swift in Sources */,
 				8681610A232CBEA000F0ABCE /* ProfileViewController.swift in Sources */,
+				C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */,
+				C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */,
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
-				9E4B36752326557E00608C32 /* DashboardTableViewController.swift in Sources */,
+				C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */,
+				C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */,
+				C9E46F1B232E09340037A582 /* app.swift in Sources */,
 				9E4B363F2326469C00608C32 /* IOSApp.xcdatamodeld in Sources */,
-				C9E800842327720300404378 /* ExerciceTableViewController.swift in Sources */,
+				C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */,
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,
 				2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */,
+				C9E46F17232DF7FA0037A582 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E31BCE232F63D300AFE854 /* MuscleTests.swift in Sources */,
+				C9E31BCC232F634200AFE854 /* ExerciceTests.swift in Sources */,
+				C9E31BCA232F5A8E00AFE854 /* UserTests.swift in Sources */,
 				9E4B364F2326469D00608C32 /* IOSAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S45TM688G;
 				INFOPLIST_FILE = IOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S45TM688G;
 				INFOPLIST_FILE = IOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
