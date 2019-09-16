@@ -11,22 +11,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="dSR-Jf-Kcx">
-            <objects>
-                <viewController id="prE-OT-1tf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gf2-JH-pmH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="LRu-g3-rgs"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4Zd-tH-ljZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tGA-nB-6vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="630" y="803"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="Alm-Ji-7Wm">
             <objects>
                 <viewController id="xzV-FV-tlK" sceneMemberID="viewController">
@@ -162,7 +146,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-dm-opM">
-                                                    <rect key="frame" x="20" y="102.33333333333333" width="334" height="29.999999999999986"/>
+                                                    <rect key="frame" x="20" y="102.66666666666667" width="334" height="30.000000000000014"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
