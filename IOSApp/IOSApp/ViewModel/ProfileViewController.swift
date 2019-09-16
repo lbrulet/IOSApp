@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  IOSApp
 //
-//  Created by Adrien Binder on 10/9/19.
+//  Created by Adrien Binder on 14/9/19.
 //  Copyright © 2019 Luc Brulet. All rights reserved.
 //
 
@@ -17,10 +17,13 @@ class ProfileViewController: UIViewController {
         
         CircularProfilImage.clipsToBounds = true
         CircularProfilImage.layer.masksToBounds = true
-        CircularProfilImage.layer.cornerRadius = CircularProfilImage.bounds.width / 2        // Do any additional setup after loading the view.
+        CircularProfilImage.layer.cornerRadius = CircularProfilImage.bounds.width / 2
+        
     }
     
-
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+       
+    }
     /*
     // MARK: - Navigation
 

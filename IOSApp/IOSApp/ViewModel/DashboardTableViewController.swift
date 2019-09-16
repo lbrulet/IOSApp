@@ -30,18 +30,17 @@ class DashboardTableViewController: UITableViewController {
             let currentMuscle = viewModel.getMuscle(byIndex: indexPath.row)
             imageView.image = currentMuscle.image
             titleView.text = currentMuscle.label
-	        }
+        }
         
         return cell
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let selectedRow = self.tableView.indexPathForSelectedRow
+        guard let selectedRow = self.tableView.indexPathForSelectedRow
         else {return}
     
         let destination = segue.destination as? ExerciceTableViewController
         let selectedMuscle = viewModel.getMuscle(byIndex: selectedRow.row)
-        print(selectedMuscle.exercices)
         destination?.selectedMuscle = (image: selectedMuscle.image, label: selectedMuscle.label, exercices: selectedMuscle.exercices)
         
     }
