@@ -114,6 +114,7 @@
                     <navigationItem key="navigationItem" id="nhl-PM-jtx"/>
                     <connections>
                         <outlet property="chart" destination="3Pe-fK-k67" id="VSw-Yz-rCg"/>
+                        <outlet property="curlLabel" destination="zfS-Jz-sew" id="woz-8s-dRN"/>
                         <outlet property="labeltest" destination="zfS-Jz-sew" id="aTu-G9-3xq"/>
                         <outlet property="switchCurl" destination="Ry9-h4-cie" id="6O1-QU-beJ"/>
                         <outlet property="switchDips" destination="AN4-Zy-Rya" id="WjS-Iq-SN6"/>
