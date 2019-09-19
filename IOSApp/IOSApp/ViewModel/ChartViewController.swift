@@ -9,6 +9,15 @@
 import UIKit
 import SwiftChart
 
+let CURL_STRING = "Curl"
+let PUMPS_STRING = "Pumps"
+let DIPS_STRING = "Dips"
+let HAMMER_CURL_STRING = "HammerCurl"
+let INCLINED_PUMPS = "Inclined Pumps"
+let ROPE_EXTENSION = "Rope Extension"
+let STATUS_ON = "on"
+let STATUS_OFF = "off"
+
 class ChartViewController: UIViewController {
 
     var dataController: DataChartSeries!
@@ -24,12 +33,12 @@ class ChartViewController: UIViewController {
     
     @IBAction func switchCurlAction(_ sender: UISwitch) {
         if sender.isOn {
-            let index = dataController.setDataStatus(name: "Curl", status: "on")
+            let index = dataController.setDataStatus(name: CURL_STRING, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "Curl", status: "off")
+            let index: Int = dataController.setDataStatus(name: CURL_STRING, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }
@@ -38,12 +47,12 @@ class ChartViewController: UIViewController {
     
     @IBAction func switchPumpsAction(_ sender: UISwitch) {
         if sender.isOn {
-            let index = dataController.setDataStatus(name: "Curl", status: "on")
+            let index = dataController.setDataStatus(name: PUMPS_STRING, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "Curl", status: "off")
+            let index: Int = dataController.setDataStatus(name: PUMPS_STRING, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }
@@ -51,26 +60,27 @@ class ChartViewController: UIViewController {
     }
     
     @IBAction func switchDipsAction(_ sender: UISwitch) {
-        if switchCurl.isOn {
-            let index = dataController.setDataStatus(name: "Dips", status: "on")
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: DIPS_STRING, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "Dips", status: "off")
+            let index: Int = dataController.setDataStatus(name: DIPS_STRING, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }
-        }    }
+        }
+    }
     
     @IBAction func switchHammerCurlAction(_ sender: UISwitch) {
-        if switchCurl.isOn {
-            let index = dataController.setDataStatus(name: "HammerCurl", status: "on")
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: HAMMER_CURL_STRING, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "HammerCurl", status: "off")
+            let index: Int = dataController.setDataStatus(name: HAMMER_CURL_STRING, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }
@@ -78,13 +88,13 @@ class ChartViewController: UIViewController {
     }
     
     @IBAction func switchInclinedPumpsAction(_ sender: UISwitch) {
-        if switchCurl.isOn {
-            let index = dataController.setDataStatus(name: "InclinedPumps", status: "on")
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: INCLINED_PUMPS, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "InclinedPumps", status: "off")
+            let index: Int = dataController.setDataStatus(name: INCLINED_PUMPS, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }
@@ -92,13 +102,13 @@ class ChartViewController: UIViewController {
     }
     
     @IBAction func switchRopeExtensionAction(_ sender: UISwitch) {
-        if switchCurl.isOn {
-            let index = dataController.setDataStatus(name: "RopeExtension", status: "on")
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: ROPE_EXTENSION, status: STATUS_ON)
             if (index >= 0) {
                 chart.add(dataController.getOneData(index: index))
             }
         } else {
-            let index: Int = dataController.setDataStatus(name: "RopeExtension", status: "off")
+            let index: Int = dataController.setDataStatus(name: ROPE_EXTENSION, status: STATUS_OFF)
             if (index >= 0) {
                 chart.removeSeriesAt(index)
             }

@@ -11,26 +11,9 @@ import SwiftChart
 
 struct DataChartSeries {
     var data: [(String, ChartSeries, String)]
-    var removeData: [(String, ChartSeries, String)] = []
+    var removedData: [(String, ChartSeries, String)] = []
     
     init (dataSet: [(String, ChartSeries, String)]) {
-        
-        let curlStat:[(Double, Double)] = [
-            (x: 1, y: 0),
-            (x: 2, y: 2.5),
-            (x: 3, y: 2),
-            (x: 4, y: 2.3),
-            (x: 5, y: 3),
-            (x: 6, y: 2.2),
-            (x: 7, y: 2.5),
-            (x: 8, y: 2.5),
-            (x: 9, y: 2.5),
-            (x: 10, y: 2.5)
-        ]
-        let curlSeries = ChartSeries(data: curlStat)
-        
-        curlSeries.area = true
-        curlSeries.color = ChartColors.redColor()
         
         self.data = dataSet
     }
@@ -47,7 +30,7 @@ struct DataChartSeries {
         var res: [ChartSeries] = []
         
         for item in self.data {
-            if (item.0 == "on") {
+            if (item.0 == STATUS_ON) {
                 res.append(item.1)
             }
         }
@@ -55,10 +38,23 @@ struct DataChartSeries {
     }
     
     mutating func setDataStatus(name: String, status: String) -> Int {
-        for (index, item) in (self.data).enumerated() {
-            if (item.2 == name) {
-                self.data[index].0 = status
-                return index
+        if (status == STATUS_OFF) {
+            for (index, item) in (self.data).enumerated() {
+                if (item.2 == name) {
+                    self.data[index].0 = status
+                    (self.removedData).append((self.data)[index])
+                    (self.data).remove(at: index)
+                    return index
+                }
+            }
+        } else if (status == STATUS_ON) {
+            for (index, item) in (self.removedData).enumerated() {
+                if (item.2 == name) {
+                    self.removedData[index].0 = status
+                    (self.data).append((self.removedData)[index])
+                    (self.removedData).remove(at: index)
+                    return (self.data).count - 1
+                }
             }
         }
         return -1
