@@ -10,9 +10,10 @@ import Foundation
 import SwiftChart
 
 struct DataChartSeries {
-    var data: [ChartSeries]
+    var data: [(String, ChartSeries, String)]
+    var removeData: [(String, ChartSeries, String)] = []
     
-    init (dataSet: [ChartSeries]) {
+    init (dataSet: [(String, ChartSeries, String)]) {
         
         let curlStat:[(Double, Double)] = [
             (x: 1, y: 0),
@@ -34,11 +35,32 @@ struct DataChartSeries {
         self.data = dataSet
     }
     
-    func getData() -> [ChartSeries] {
+    func getData() -> [(String, ChartSeries, String)] {
         return self.data
     }
     
-    func getDataOn(){
+    func getOneData(index: Int) -> [ChartSeries] {
+        return [(self.data)[index].1]
     }
     
+    func getDataOn() -> [ChartSeries] {
+        var res: [ChartSeries] = []
+        
+        for item in self.data {
+            if (item.0 == "on") {
+                res.append(item.1)
+            }
+        }
+        return res
+    }
+    
+    mutating func setDataStatus(name: String, status: String) -> Int {
+        for (index, item) in (self.data).enumerated() {
+            if (item.2 == name) {
+                self.data[index].0 = status
+                return index
+            }
+        }
+        return -1
+    }
 }
