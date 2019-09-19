@@ -11,89 +11,93 @@ import SwiftChart
 
 class ChartViewController: UIViewController {
 
-    var curlStat:[(Double, Double)] = [
-        (x: 1, y: 0),
-        (x: 2, y: 2.5),
-        (x: 3, y: 2),
-        (x: 4, y: 2.3),
-        (x: 5, y: 3),
-        (x: 6, y: 2.2),
-        (x: 7, y: 2.5),
-        (x: 8, y: 2.5),
-        (x: 9, y: 2.5),
-        (x: 10, y: 2.5)
-    ]
-    var pumpsStat:[(Double, Double)] = [
-        (x: 1, y: 1.0),
-        (x: 2, y: 2.0),
-        (x: 3, y: 1.5),
-        (x: 4, y: 1.0),
-        (x: 5, y: 2.0),
-        (x: 6, y: 2.5),
-        (x: 7, y: 2.5),
-        (x: 8, y: 2.5),
-        (x: 9, y: 3.0),
-        (x: 10, y: 2.0)
-    ]
-    var dipsStat:[(Double, Double)] = [
-        (x: 1, y: 1.0),
-        (x: 2, y: 1.2),
-        (x: 3, y: 1.4),
-        (x: 4, y: 1.6),
-        (x: 5, y: 1.8),
-        (x: 6, y: 1.4),
-        (x: 7, y: 2.0),
-        (x: 8, y: 2.2),
-        (x: 9, y: 2.0),
-        (x: 10, y: 2.0)
-    ]
+    var dataController: DataChartSeries!
     
-    var curlSeries = ChartSeries(data: [(1,1)])
-    var pumpsSeries = ChartSeries(data: [(1,1)])
-    var dipsSeries = ChartSeries(data: [(1,1)])
-    
-    @IBOutlet weak var pumpsSwitch: UISwitch!
-    @IBOutlet weak var curlSwitch: UISwitch!
     @IBOutlet weak var chart: Chart!
-    @IBAction func switchAction(_ sender: Any) {
-
-        let onStateCurlSwitch = curlSwitch.isOn
-        let onStatePumpsStat = pumpsSwitch.isOn
-        
-        if onStateCurlSwitch {
-            //add code is on
+    @IBOutlet weak var switchCurl: UISwitch!
+    @IBOutlet weak var switchPumps: UISwitch!
+    @IBOutlet weak var switchDips: UISwitch!
+    @IBOutlet weak var switchHammerCurl: UISwitch!
+    @IBOutlet weak var switchInclinedPumps: UISwitch!
+    @IBOutlet weak var switchRopeExtension: UISwitch!
+    @IBOutlet weak var labeltest: UILabel!
+    
+    @IBAction func switchCurlAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
         } else {
-            //add code is off
+            // code here
         }
-        
-        if onStatePumpsStat {
-            // add code is on
+    }
+    
+    @IBAction func switchPumpsAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
         } else {
-            //add code is off
+            // code here
         }
-        
+    }
+    
+    @IBAction func switchDipsAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
+        } else {
+            // code here
+        }
+    }
+    
+    @IBAction func switchHammerCurlAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
+        } else {
+            // code here
+        }
+    }
+    
+    @IBAction func switchInclinedPumpsAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
+        } else {
+            // code here
+        }
+    }
+    
+    @IBAction func switchRopeExtensionAction(_ sender: UISwitch) {
+        if switchCurl.isOn {
+            // code here
+        } else {
+            // code here
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.curlSeries = ChartSeries(data: self.curlStat)
-        self.pumpsSeries = ChartSeries(data: self.pumpsStat)
-        self.dipsSeries = ChartSeries(data: self.dipsStat)
         
-        self.curlSeries.area = true
-        self.curlSeries.color = ChartColors.redColor()
+        // DATA TEST
+        let curlStat:[(Double, Double)] = [
+            (x: 1, y: 0),
+            (x: 2, y: 2.5),
+            (x: 3, y: 2),
+            (x: 4, y: 2.3),
+            (x: 5, y: 3),
+            (x: 6, y: 2.2),
+            (x: 7, y: 2.5),
+            (x: 8, y: 2.5),
+            (x: 9, y: 2.5),
+            (x: 10, y: 2.5)
+        ]
+        let curlSeries = ChartSeries(data: curlStat)
         
-        self.pumpsSeries.area = true
-        self.pumpsSeries.color = ChartColors.blueColor()
+        curlSeries.area = true
+        curlSeries.color = ChartColors.redColor()
         
-        self.dipsSeries.area = true
-        self.dipsSeries.color = ChartColors.orangeColor()
+        dataController = DataChartSeries(dataSet: [curlSeries])
         
         chart.xLabels = [1,2,3,4,5,6,7,8,9,10]
         chart.xLabelsFormatter = { String(Int(round($1))) + "d" }
         
-        chart.add([curlSeries, pumpsSeries, dipsSeries])
+        chart.add(dataController.getData())
         // Do any additional setup after loading the view.
     }
     
