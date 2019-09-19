@@ -118,6 +118,7 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        curl.textColor = UIColor.redColor()
         
         // DATA TEST
         let curlStat:[(Double, Double)] = [
@@ -152,9 +153,73 @@ class ChartViewController: UIViewController {
         let pumpsSeries = ChartSeries(data: pumpsStat)
         pumpsSeries.area = true
         pumpsSeries.color = ChartColors.blueColor()
+        
+        let dipsStat:[(Double, Double)] = [
+            (x: 1, y: 1.0),
+            (x: 2, y: 2.0),
+            (x: 3, y: 2.5),
+            (x: 4, y: 3.0),
+            (x: 5, y: 3.0),
+            (x: 6, y: 4.5),
+            (x: 7, y: 4.5),
+            (x: 8, y: 4.5),
+            (x: 9, y: 3.0),
+            (x: 10, y: 3.0)
+        ]
+        let dipsSeries = ChartSeries(data: dipsStat)
+        dipsSeries.area = true
+        dipsSeries.color = ChartColors.orangeColor()
+        
+        let hammerCurlStat:[(Double, Double)] = [
+            (x: 1, y: 4.0),
+            (x: 2, y: 2.0),
+            (x: 3, y: 1.5),
+            (x: 4, y: 3.0),
+            (x: 5, y: 2.0),
+            (x: 6, y: 3.0),
+            (x: 7, y: 2.5),
+            (x: 8, y: 3.5),
+            (x: 9, y: 4.0),
+            (x: 10, y: 3.0)
+        ]
+        let hammerCurlSeries = ChartSeries(data: hammerCurlStat)
+        hammerCurlSeries.area = true
+        hammerCurlSeries.color = ChartColors.purpleColor()
+        
+        let inclinedPumpsStat:[(Double, Double)] = [
+            (x: 1, y: 1.0),
+            (x: 2, y: 2.0),
+            (x: 3, y: 1.5),
+            (x: 4, y: 1.0),
+            (x: 5, y: 2.0),
+            (x: 6, y: 1.0),
+            (x: 7, y: 1.5),
+            (x: 8, y: 1.5),
+            (x: 9, y: 1.0),
+            (x: 10, y: 1.0)
+        ]
+        let inclinedPumpsSeries = ChartSeries(data: inclinedPumpsStat)
+        inclinedPumpsSeries.area = true
+        inclinedPumpsSeries.color = ChartColors.greyColor()
+        
+        let ropeExtensionStat:[(Double, Double)] = [
+            (x: 1, y: 3.0),
+            (x: 2, y: 3.0),
+            (x: 3, y: 3.5),
+            (x: 4, y: 3.0),
+            (x: 5, y: 3.0),
+            (x: 6, y: 2.0),
+            (x: 7, y: 2.5),
+            (x: 8, y: 2.5),
+            (x: 9, y: 3.0),
+            (x: 10, y: 3.0)
+        ]
+        let ropeExtensionSeries = ChartSeries(data: ropeExtensionStat)
+        ropeExtensionSeries.area = true
+        ropeExtensionSeries.color = ChartColors.darkGreenColor()
         // END TEST
         
-        dataController = DataChartSeries(dataSet: [("on", curlSeries, "Curl"), ("on", pumpsSeries, "Pumps")])
+        dataController = DataChartSeries(dataSet: [(STATUS_ON, curlSeries, CURL_STRING), (STATUS_ON, pumpsSeries, PUMPS_STRING), (STATUS_ON, dipsSeries, DIPS_STRING), (STATUS_ON, hammerCurlSeries, HAMMER_CURL_STRING), (STATUS_ON, inclinedPumpsSeries, INCLINED_PUMPS), (STATUS_ON, ropeExtensionSeries, ROPE_EXTENSION)])
         
         chart.xLabels = [1,2,3,4,5,6,7,8,9,10]
         chart.xLabelsFormatter = { String(Int(round($1))) + "d" }

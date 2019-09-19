@@ -14,7 +14,6 @@ struct DataChartSeries {
     var removedData: [(String, ChartSeries, String)] = []
     
     init (dataSet: [(String, ChartSeries, String)]) {
-        
         self.data = dataSet
     }
     
