@@ -115,7 +115,12 @@
                     <connections>
                         <outlet property="chart" destination="3Pe-fK-k67" id="VSw-Yz-rCg"/>
                         <outlet property="curlLabel" destination="zfS-Jz-sew" id="woz-8s-dRN"/>
+                        <outlet property="dipsLabel" destination="2tf-KB-Scf" id="CQ1-UD-ChB"/>
+                        <outlet property="hammerCurlLabel" destination="RsI-Zi-8ae" id="LHq-Fi-qv9"/>
+                        <outlet property="inclinedPumpsLabel" destination="Jfq-8P-Nd8" id="tVB-iI-dK6"/>
                         <outlet property="labeltest" destination="zfS-Jz-sew" id="aTu-G9-3xq"/>
+                        <outlet property="pumpsLabel" destination="ROd-lc-phU" id="3hX-pe-o9s"/>
+                        <outlet property="ropeExtensionLabel" destination="e1O-iq-JSX" id="8MO-HB-giY"/>
                         <outlet property="switchCurl" destination="Ry9-h4-cie" id="6O1-QU-beJ"/>
                         <outlet property="switchDips" destination="AN4-Zy-Rya" id="WjS-Iq-SN6"/>
                         <outlet property="switchHammerCurl" destination="bpV-cH-IKL" id="55R-QV-Owy"/>

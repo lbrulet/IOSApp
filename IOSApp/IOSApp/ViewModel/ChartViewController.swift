@@ -29,6 +29,11 @@ class ChartViewController: UIViewController {
     var dataController: DataChartSeries!
     
     @IBOutlet weak var curlLabel: UILabel!
+    @IBOutlet weak var pumpsLabel: UILabel!
+    @IBOutlet weak var dipsLabel: UILabel!
+    @IBOutlet weak var hammerCurlLabel: UILabel!
+    @IBOutlet weak var inclinedPumpsLabel: UILabel!
+    @IBOutlet weak var ropeExtensionLabel: UILabel!
     @IBOutlet weak var chart: Chart!
     @IBOutlet weak var switchCurl: UISwitch!
     @IBOutlet weak var switchPumps: UISwitch!
@@ -125,7 +130,7 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        curlLabel.textColor = UIColor.red
+        curlLabel = setLabelColor(label: curlLabel, color: COLOR_RED)
         
         // DATA TEST
         let curlStat:[(Double, Double)] = [
@@ -226,13 +231,21 @@ class ChartViewController: UIViewController {
         ropeExtensionSeries.color = COLOR_GREEN
         // END TEST
         
-        dataController = DataChartSeries(dataSet: [(STATUS_ON, curlSeries, CURL_STRING), (STATUS_ON, pumpsSeries, PUMPS_STRING), (STATUS_ON, dipsSeries, DIPS_STRING), (STATUS_ON, hammerCurlSeries, HAMMER_CURL_STRING), (STATUS_ON, inclinedPumpsSeries, INCLINED_PUMPS), (STATUS_ON, ropeExtensionSeries, ROPE_EXTENSION)])
+        dataController = DataChartSeries(dataSet: [(STATUS_ON, curlSeries, CURL_STRING, COLOR_RED), (STATUS_ON, pumpsSeries, PUMPS_STRING, COLOR_BLUE), (STATUS_ON, dipsSeries, DIPS_STRING, COLOR_ORANGE), (STATUS_ON, hammerCurlSeries, HAMMER_CURL_STRING, COLOR_PURPLE), (STATUS_ON, inclinedPumpsSeries, INCLINED_PUMPS, COLOR_PINK), (STATUS_ON, ropeExtensionSeries, ROPE_EXTENSION, COLOR_GREEN)])
         
+        //CHART INIT
         chart.xLabels = [1,2,3,4,5,6,7,8,9,10]
         chart.xLabelsFormatter = { String(Int(round($1))) + "d" }
         chart.yLabelsFormatter = { String(Int($1)) +  "kgs" }
 
         chart.add(dataController.getDataOn())
+        
+        // LABELS COLOR
+        var labels = [curlLabel, pumpsLabel, dipsLabel, hammerCurlLabel, inclinedPumpsLabel, ropeExtensionLabel]
+        for (index, item) in (dataController.getData()).enumerated() {
+            labels[index] = setLabelColor(label: labels[index]!, color: item.3)
+        }
+        
         // Do any additional setup after loading the view.
     }
     

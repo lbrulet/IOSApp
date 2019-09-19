@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D226ACF23333E410008A59B /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D226ACE23333E410008A59B /* Chart.swift */; };
+		2D226AD3233388630008A59B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D226AD2233388630008A59B /* Label.swift */; };
 		2D3493822331EF4C009241C2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3493812331EF4C009241C2 /* ChartViewController.swift */; };
 		2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F264E2327B53A00520D52 /* SettingsViewController.swift */; };
 		44169262E6E1E294127B6632 /* Pods_IOSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E11D24248D863330EFEBFE8 /* Pods_IOSAppUITests.framework */; };
@@ -57,6 +58,7 @@
 		035461E083ECE3A5A808C8AA /* Pods-IOSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSAppTests.release.xcconfig"; path = "Target Support Files/Pods-IOSAppTests/Pods-IOSAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F463D9ACD54C3DB5CEAED34 /* Pods-IOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSApp.release.xcconfig"; path = "Target Support Files/Pods-IOSApp/Pods-IOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		2D226ACE23333E410008A59B /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		2D226AD2233388630008A59B /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		2D3493812331EF4C009241C2 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		2D6F264E2327B53A00520D52 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3E11D24248D863330EFEBFE8 /* Pods_IOSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				C9E8008123276EA100404378 /* Exerice.swift */,
 				C9E46F16232DF7FA0037A582 /* User.swift */,
 				2D226ACE23333E410008A59B /* Chart.swift */,
+				2D226AD2233388630008A59B /* Label.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,
 				2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */,
+				2D226AD3233388630008A59B /* Label.swift in Sources */,
 				C9E46F17232DF7FA0037A582 /* User.swift in Sources */,
 				2D3493822331EF4C009241C2 /* ChartViewController.swift in Sources */,
 			);

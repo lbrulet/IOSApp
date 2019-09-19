@@ -10,14 +10,14 @@ import Foundation
 import SwiftChart
 
 struct DataChartSeries {
-    var data: [(String, ChartSeries, String)]
-    var removedData: [(String, ChartSeries, String)] = []
+    var data: [(String, ChartSeries, String, UIColor)]
+    var removedData: [(String, ChartSeries, String, UIColor)] = []
     
-    init (dataSet: [(String, ChartSeries, String)]) {
+    init (dataSet: [(String, ChartSeries, String, UIColor)]) {
         self.data = dataSet
     }
     
-    func getData() -> [(String, ChartSeries, String)] {
+    func getData() -> [(String, ChartSeries, String, UIColor)] {
         return self.data
     }
     
