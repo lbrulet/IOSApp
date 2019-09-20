@@ -13,6 +13,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     private let viewModel = MuscleViewModel()
     private let dateModel = DateViewController()
     private var userModel = UserViewController()
+    private let chartViewController = ChartViewController()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userImage: UIImageView!

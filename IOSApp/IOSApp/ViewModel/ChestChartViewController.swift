@@ -1,147 +1,137 @@
 //
-//  ChartViewController.swift
+//  ChestChartViewController.swift
 //  IOSApp
 //
-//  Created by Lancia Romain on 18/9/19.
+//  Created by Lancia Romain on 20/9/19.
 //  Copyright © 2019 Luc Brulet. All rights reserved.
 //
 
 import UIKit
 import SwiftChart
 
-let CURLL_STRING = "Curl"
-let PUMPS_STRING = "Pumps"
-let DIPS_STRING = "Dips"
-let HAMMER_CURLL_STRING = "HammerCurl"
-let INCLINED_PUMPS_STRING = "Inclined Pumps"
-let ROPE_EXTENSION_STRING = "Rope Extension"
+let BARBELL_BP_STRING = "Barbell bench press"
+let CABLE_FLY_STRING = "Cable Fly"
+let CHEST_DIPS_STRING = "Chest Dips"
+let DECLINED_BARBELL_BP_STRING = "Declined Barbell Bench Press"
+let INCLINED_BARBELL_BP_STRING = "Inclined Barbell Bench Press"
+let DUMBELL_SQUEEZE_PRESS_STRING = "Dumbell Squeeze Press"
 
-let STATUS_ON = "on"
-let STATUS_OFF = "off"
-
-let COLOR_PINK = UIColor(red: 1.0, green: 0.4, blue: 1.0, alpha: 1.0)
-let COLOR_PURPLE = UIColor(red:0.67, green:0.50, blue:1.00, alpha:1.0)
-let COLOR_RED = UIColor(red:1.00, green:0.00, blue:0.40, alpha:1.0)
-let COLOR_BLUE = UIColor(red:0.20, green:0.60, blue:1.00, alpha:1.0)
-let COLOR_ORANGE = UIColor(red:1.00, green:0.60, blue:0.20, alpha:1.0)
-let COLOR_GREEN = UIColor(red:0.36, green:0.84, blue:0.36, alpha:1.0)
-
-class ChartViewController: UIViewController {
+class ChestChartViewController: UIViewController {
 
     var dataController: DataChartSeries!
     
-    @IBOutlet weak var curlLabel: UILabel!
-    @IBOutlet weak var pumpsLabel: UILabel!
-    @IBOutlet weak var dipsLabel: UILabel!
-    @IBOutlet weak var hammerCurlLabel: UILabel!
-    @IBOutlet weak var inclinedPumpsLabel: UILabel!
-    @IBOutlet weak var ropeExtensionLabel: UILabel!
+    @IBOutlet weak var barbellBPLabel: UILabel!
+    @IBOutlet weak var cableFlyLabel: UILabel!
+    @IBOutlet weak var chestDipsLabel: UILabel!
+    @IBOutlet weak var declinedBarbellBPLabel: UILabel!
+    @IBOutlet weak var inclinedBarbellBPLabel: UILabel!
+    @IBOutlet weak var dumbellSqueesePressLabel: UILabel!
+    
+    @IBOutlet weak var switchBarbellBP: UISwitch!
+    @IBOutlet weak var switchCableFly: UISwitch!
+    @IBOutlet weak var switchChestDips: UISwitch!
+    @IBOutlet weak var switchDeclinedBarbellBP: UISwitch!
+    @IBOutlet weak var switchInclinedBarbellBP: UISwitch!
+    @IBOutlet weak var switchDumbellSqueesePress: UISwitch!
     
     @IBOutlet weak var chart: Chart!
     
-    @IBOutlet weak var switchCurl: UISwitch!
-    @IBOutlet weak var switchPumps: UISwitch!
-    @IBOutlet weak var switchDips: UISwitch!
-    @IBOutlet weak var switchHammerCurl: UISwitch!
-    @IBOutlet weak var switchInclinedPumps: UISwitch!
-    @IBOutlet weak var switchRopeExtension: UISwitch!
-    @IBOutlet weak var labeltest: UILabel!
+    @IBAction func swtichBarbellBPAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: BARBELL_BP_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: BARBELL_BP_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
     
-    @IBAction func goChest(_ sender: UIButton) {
-        performSegue(withIdentifier: "chestChart", sender: self)
+    @IBAction func switchCableFlyAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: CABLE_FLY_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: CABLE_FLY_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
+    
+    @IBAction func switchChestDipsAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: CHEST_DIPS_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: CHEST_DIPS_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
+    
+    @IBAction func switchDeclinedBarbellBPAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: DECLINED_BARBELL_BP_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: DECLINED_BARBELL_BP_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
+    
+    @IBAction func switchInclinedBarbellBPAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: INCLINED_BARBELL_BP_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: INCLINED_BARBELL_BP_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
+    
+    @IBAction func switchDumbellSqueesePressAction(_ sender: UISwitch) {
+        if sender.isOn {
+            let index = dataController.setDataStatus(name: DUMBELL_SQUEEZE_PRESS_STRING, status: STATUS_ON)
+            if (index >= 0) {
+                chart.add(dataController.getOneData(index: index))
+            }
+        } else {
+            let index: Int = dataController.setDataStatus(name: DUMBELL_SQUEEZE_PRESS_STRING, status: STATUS_OFF)
+            if (index >= 0) {
+                chart.removeSeriesAt(index)
+            }
+        }
+    }
+    
+    @IBAction func goBack(_ sender: UIButton) {
+        performSegue(withIdentifier: "backChart", sender: self)
     }
     
     @IBAction func goBiceps(_ sender: UIButton) {
         performSegue(withIdentifier: "bicepsChart", sender: self)
     }
     
-    @IBAction func switchCurlAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: CURLL_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: CURLL_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
-    
-    @IBAction func switchPumpsAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: PUMPS_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: PUMPS_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
-    
-    @IBAction func switchDipsAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: DIPS_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: DIPS_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
-    
-    @IBAction func switchHammerCurlAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: HAMMER_CURLL_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: HAMMER_CURLL_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
-    
-    @IBAction func switchInclinedPumpsAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: INCLINED_PUMPS_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: INCLINED_PUMPS_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
-    
-    @IBAction func switchRopeExtensionAction(_ sender: UISwitch) {
-        if sender.isOn {
-            let index = dataController.setDataStatus(name: ROPE_EXTENSION_STRING, status: STATUS_ON)
-            if (index >= 0) {
-                chart.add(dataController.getOneData(index: index))
-            }
-        } else {
-            let index: Int = dataController.setDataStatus(name: ROPE_EXTENSION_STRING, status: STATUS_OFF)
-            if (index >= 0) {
-                chart.removeSeriesAt(index)
-            }
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+
         // DATA TEST
         let curlStat:[(Double, Double)] = [
             (x: 1, y: 0),
@@ -241,22 +231,23 @@ class ChartViewController: UIViewController {
         ropeExtensionSeries.color = COLOR_GREEN
         // END TEST
         
-        dataController = DataChartSeries(dataSet: [(STATUS_ON, curlSeries, CURLL_STRING, COLOR_RED), (STATUS_ON, pumpsSeries, PUMPS_STRING, COLOR_BLUE), (STATUS_ON, dipsSeries, DIPS_STRING, COLOR_ORANGE), (STATUS_ON, hammerCurlSeries, HAMMER_CURLL_STRING, COLOR_PURPLE), (STATUS_ON, inclinedPumpsSeries, INCLINED_PUMPS_STRING, COLOR_PINK), (STATUS_ON, ropeExtensionSeries, ROPE_EXTENSION_STRING, COLOR_GREEN)])
+        dataController = DataChartSeries(dataSet: [(STATUS_ON, curlSeries, BARBELL_BP_STRING, COLOR_RED), (STATUS_ON, pumpsSeries, CABLE_FLY_STRING, COLOR_BLUE), (STATUS_ON, dipsSeries, CHEST_DIPS_STRING, COLOR_ORANGE), (STATUS_ON, hammerCurlSeries, DECLINED_BARBELL_BP_STRING, COLOR_PURPLE), (STATUS_ON, inclinedPumpsSeries, INCLINED_BARBELL_BP_STRING, COLOR_PINK), (STATUS_ON, ropeExtensionSeries, DUMBELL_SQUEEZE_PRESS_STRING, COLOR_GREEN)])
         
         //CHART INIT
         chart.xLabels = [1,2,3,4,5,6,7,8,9,10]
         chart.xLabelsFormatter = { String(Int(round($1))) + "d" }
         chart.yLabelsFormatter = { String(Int($1)) +  "kgs" }
-
+        
         chart.add(dataController.getDataOn())
         
         // LABELS COLOR
-        var labels = [curlLabel, pumpsLabel, dipsLabel, hammerCurlLabel, inclinedPumpsLabel, ropeExtensionLabel]
+        var labels = [barbellBPLabel, cableFlyLabel, chestDipsLabel, declinedBarbellBPLabel, inclinedBarbellBPLabel, dumbellSqueesePressLabel]
         for (index, item) in (dataController.getData()).enumerated() {
             labels[index] = setLabelColor(label: labels[index]!, color: item.3)
         }
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -266,29 +257,5 @@ class ChartViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func didTouchChart(_ chart: Chart, indexes: Array<Int?>, x: Double, left: CGFloat) {
-        for (seriesIndex, dataIndex) in indexes.enumerated() {
-            if let value = chart.valueForSeries(seriesIndex, atIndex: dataIndex) {
-                print("Touched series: \(seriesIndex): data index: \(dataIndex!); series value: \(value); x-axis value: \(x) (from left: \(left))")
-            }
-        }
-    }
-    
-    func didFinishTouchingChart(_ chart: Chart) {
-        
-    }
-    
-    func didEndTouchingChart(_ chart: Chart) {
-        
-    }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        
-        super.viewWillTransition(to: size, with: coordinator)
-        
-        // Redraw chart on rotation
-        chart.setNeedsDisplay()
-        
-    }
+
 }
