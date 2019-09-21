@@ -22,12 +22,12 @@ public struct UserViewController {
         self.user.newRecords(label: "Inclined Barbell Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Chest")
         self.user.newRecords(label: "Dumbell Squeeze Press", weight: 0, color: COLOR_PURPLE, typeMuscle: "Chest")
         
-        self.user.newRecords(label: "Hammer curl", weight: 0, color: COLOR_PINK, typeMuscle: "Back")
-        self.user.newRecords(label: "Ez bar curl", weight: 0, color: COLOR_RED, typeMuscle: "Back")
-        self.user.newRecords(label: "Curl", weight: 0, color: COLOR_BLUE, typeMuscle: "Back")
-        self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Back")
-        self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Back")
-        self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Back")
+        self.user.newRecords(label: "Hammer curl", weight: 0, color: COLOR_PINK, typeMuscle: "Biceps")
+        self.user.newRecords(label: "Ez bar curl", weight: 0, color: COLOR_RED, typeMuscle: "Biceps")
+        self.user.newRecords(label: "Curl", weight: 0, color: COLOR_BLUE, typeMuscle: "Biceps")
+        self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
+        self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
+        self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
     }
     
     func getMuscleDataChart(typeMuscle: String) -> DataChartSeries {
@@ -67,8 +67,8 @@ public struct UserViewController {
         self.user.setLastName(lastName: lastName)
     }
     
-    mutating func newRecords(label: String, weight: Double, color: UIColor?) {
-        self.user.newRecords(label: label, weight: weight, color: color)
+    mutating func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
+        self.user.newRecords(label: label, weight: weight, color: color, typeMuscle: typeMuscle)
     }
     
     func getUser() -> User {
