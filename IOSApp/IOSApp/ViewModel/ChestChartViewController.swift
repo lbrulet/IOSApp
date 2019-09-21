@@ -257,5 +257,30 @@ class ChestChartViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func didTouchChart(_ chart: Chart, indexes: Array<Int?>, x: Double, left: CGFloat) {
+        for (seriesIndex, dataIndex) in indexes.enumerated() {
+            if let value = chart.valueForSeries(seriesIndex, atIndex: dataIndex) {
+                print("Touched series: \(seriesIndex): data index: \(dataIndex!); series value: \(value); x-axis value: \(x) (from left: \(left))")
+            }
+        }
+    }
+    
+    func didFinishTouchingChart(_ chart: Chart) {
+        
+    }
+    
+    func didEndTouchingChart(_ chart: Chart) {
+        
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        // Redraw chart on rotation
+        chart.setNeedsDisplay()
+        
+    }
 
 }

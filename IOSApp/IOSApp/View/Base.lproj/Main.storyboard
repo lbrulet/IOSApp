@@ -312,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vy-I7-qnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2694.202898550725" y="1638.6160714285713"/>
+            <point key="canvasLocation" x="-2807" y="1347"/>
         </scene>
         <!--Chest Chart View Controller-->
         <scene sceneID="Fih-zO-3kF">
@@ -463,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIq-9t-nv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4052.1739130434785" y="1030.5803571428571"/>
+            <point key="canvasLocation" x="-3657" y="761"/>
         </scene>
         <!--Settings-->
         <scene sceneID="lTU-Aq-Ab6">
