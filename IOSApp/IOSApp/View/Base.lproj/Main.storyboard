@@ -18,452 +18,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-fK-k67" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="20" y="194" width="374" height="378"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ry9-h4-cie">
-                                <rect key="frame" x="20" y="624" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchCurlAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="4Xz-wi-k6V"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfS-Jz-sew">
-                                <rect key="frame" x="83" y="626" width="40" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pumps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROd-lc-phU">
-                                <rect key="frame" x="83" y="681" width="67" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-KB-Scf">
-                                <rect key="frame" x="83" y="733" width="44" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AoK-eR-fYm">
-                                <rect key="frame" x="20" y="679" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchPumpsAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="sDa-nq-9Ci"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AN4-Zy-Rya">
-                                <rect key="frame" x="20" y="731" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchDipsAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="80g-eA-TKO"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-cH-IKL">
-                                <rect key="frame" x="181" y="624" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchHammerCurlAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="0cb-al-kxg"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-Nr-Oym">
-                                <rect key="frame" x="181" y="679" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchInclinedPumpsAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="buc-b5-zBw"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQ8-fg-3Kq">
-                                <rect key="frame" x="181" y="731" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchRopeExtensionAction:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="Q4G-mv-gFi"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hammer Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsI-Zi-8ae">
-                                <rect key="frame" x="243" y="626" width="126" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inclined Pumps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfq-8P-Nd8">
-                                <rect key="frame" x="243" y="681" width="146" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rope Extension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1O-iq-JSX">
-                                <rect key="frame" x="243" y="733" width="148" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VK-aG-EOi">
-                                <rect key="frame" x="166" y="137" width="71" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqn-Sk-CYd">
-                                <rect key="frame" x="69" y="140" width="48" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqn-Sk-CYd">
+                                <rect key="frame" x="69" y="140" width="55" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Chest">
+                                <state key="normal" title="Biceps">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goChest:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="kbf-yh-9Sk"/>
+                                    <action selector="BicepsBtn:" destination="xzV-FV-tlK" eventType="touchUpInside" id="Qfg-kj-N8F"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj8-Rh-XpZ">
-                                <rect key="frame" x="284" y="140" width="55" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj8-Rh-XpZ">
+                                <rect key="frame" x="299" y="140" width="40" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Biceps"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-fK-k67" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="20" y="184.5" width="374" height="352"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="WFM-ev-BRN"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HVJ-Eb-97P">
+                                <rect key="frame" x="20" y="545" width="374" height="226"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uhG-qy-UvM">
+                                    <size key="itemSize" width="177" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="zxW-a7-Kne">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-rQ-X4C">
+                                                    <rect key="frame" x="67" y="15" width="97" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EMW-y4-Ucx">
+                                                    <rect key="frame" x="10" y="10" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="kkr-rQ-X4C" firstAttribute="leading" secondItem="EMW-y4-Ucx" secondAttribute="trailing" constant="8" id="0q8-Nt-pO4"/>
+                                            <constraint firstAttribute="bottom" secondItem="EMW-y4-Ucx" secondAttribute="bottom" constant="9" id="FcX-xp-ArQ"/>
+                                            <constraint firstItem="EMW-y4-Ucx" firstAttribute="leading" secondItem="zxW-a7-Kne" secondAttribute="leading" constant="10" id="XEK-Gy-now"/>
+                                            <constraint firstItem="kkr-rQ-X4C" firstAttribute="top" secondItem="zxW-a7-Kne" secondAttribute="top" constant="15" id="feX-nK-wCU"/>
+                                            <constraint firstAttribute="trailing" secondItem="kkr-rQ-X4C" secondAttribute="trailing" constant="13" id="jDS-Na-Iv0"/>
+                                            <constraint firstAttribute="bottom" secondItem="kkr-rQ-X4C" secondAttribute="bottom" constant="14" id="jXX-7c-q9i"/>
+                                            <constraint firstItem="EMW-y4-Ucx" firstAttribute="top" secondItem="zxW-a7-Kne" secondAttribute="top" constant="10" id="kDw-pC-Ynr"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-VR-ddT">
+                                <rect key="frame" x="179" y="138" width="65" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Chest"/>
                                 <connections>
-                                    <action selector="goBiceps:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="ZaX-8H-koA"/>
+                                    <action selector="ChestBtn:" destination="xzV-FV-tlK" eventType="touchUpInside" id="oSc-gm-vop"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3bj-VR-ddT" firstAttribute="top" secondItem="qhM-nC-HBu" secondAttribute="top" constant="50" id="4m3-Wp-3ux"/>
+                            <constraint firstItem="qhM-nC-HBu" firstAttribute="bottom" secondItem="HVJ-Eb-97P" secondAttribute="bottom" constant="42" id="7hX-kN-0Mh"/>
+                            <constraint firstItem="3Pe-fK-k67" firstAttribute="top" secondItem="3bj-VR-ddT" secondAttribute="bottom" constant="4.5" id="AVP-kF-KFq"/>
+                            <constraint firstItem="Dqn-Sk-CYd" firstAttribute="top" secondItem="qhM-nC-HBu" secondAttribute="top" constant="52" id="GQl-Bj-618"/>
+                            <constraint firstItem="3bj-VR-ddT" firstAttribute="leading" secondItem="Dqn-Sk-CYd" secondAttribute="trailing" constant="55" id="IEx-0K-M9J"/>
+                            <constraint firstItem="HVJ-Eb-97P" firstAttribute="trailing" secondItem="3Pe-fK-k67" secondAttribute="trailing" id="IGL-1M-jz7"/>
+                            <constraint firstItem="Vj8-Rh-XpZ" firstAttribute="top" secondItem="qhM-nC-HBu" secondAttribute="top" constant="52" id="RT3-pH-FUa"/>
+                            <constraint firstItem="qhM-nC-HBu" firstAttribute="trailing" secondItem="3Pe-fK-k67" secondAttribute="trailing" constant="20" id="TA9-6C-kMe"/>
+                            <constraint firstItem="HVJ-Eb-97P" firstAttribute="leading" secondItem="3Pe-fK-k67" secondAttribute="leading" id="gYR-yM-WHV"/>
+                            <constraint firstItem="3Pe-fK-k67" firstAttribute="leading" secondItem="qhM-nC-HBu" secondAttribute="leading" constant="20" id="gy6-5l-yWO"/>
+                            <constraint firstItem="HVJ-Eb-97P" firstAttribute="top" secondItem="3Pe-fK-k67" secondAttribute="bottom" constant="8.5" id="ikI-zf-Gs7"/>
+                            <constraint firstItem="Dqn-Sk-CYd" firstAttribute="leading" secondItem="qhM-nC-HBu" secondAttribute="leading" constant="69" id="oDQ-Ef-JxZ"/>
+                            <constraint firstItem="qhM-nC-HBu" firstAttribute="trailing" secondItem="Vj8-Rh-XpZ" secondAttribute="trailing" constant="75" id="t9x-X7-Rcx"/>
+                            <constraint firstItem="Vj8-Rh-XpZ" firstAttribute="leading" secondItem="3bj-VR-ddT" secondAttribute="trailing" constant="55" id="vBF-To-fZc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qhM-nC-HBu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Charts" id="nhl-PM-jtx"/>
                     <connections>
                         <outlet property="chart" destination="3Pe-fK-k67" id="VSw-Yz-rCg"/>
-                        <outlet property="curlLabel" destination="zfS-Jz-sew" id="woz-8s-dRN"/>
-                        <outlet property="dipsLabel" destination="2tf-KB-Scf" id="CQ1-UD-ChB"/>
-                        <outlet property="hammerCurlLabel" destination="RsI-Zi-8ae" id="LHq-Fi-qv9"/>
-                        <outlet property="inclinedPumpsLabel" destination="Jfq-8P-Nd8" id="tVB-iI-dK6"/>
-                        <outlet property="labeltest" destination="zfS-Jz-sew" id="aTu-G9-3xq"/>
-                        <outlet property="pumpsLabel" destination="ROd-lc-phU" id="3hX-pe-o9s"/>
-                        <outlet property="ropeExtensionLabel" destination="e1O-iq-JSX" id="8MO-HB-giY"/>
-                        <outlet property="switchCurl" destination="Ry9-h4-cie" id="6O1-QU-beJ"/>
-                        <outlet property="switchDips" destination="AN4-Zy-Rya" id="WjS-Iq-SN6"/>
-                        <outlet property="switchHammerCurl" destination="bpV-cH-IKL" id="55R-QV-Owy"/>
-                        <outlet property="switchInclinedPumps" destination="UPA-Nr-Oym" id="FVD-1i-1Rp"/>
-                        <outlet property="switchPumps" destination="AoK-eR-fYm" id="Szu-RQ-Ahn"/>
-                        <outlet property="switchRopeExtension" destination="DQ8-fg-3Kq" id="3Qf-hN-YmQ"/>
-                        <segue destination="xtO-xF-uVi" kind="presentation" identifier="chestChart" id="vGT-II-dor"/>
-                        <segue destination="hVB-gj-AMa" kind="presentation" identifier="bicepsChart" id="OFF-WF-2rs"/>
+                        <outlet property="collectionView" destination="HVJ-Eb-97P" id="FbS-Wi-x1V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeP-7V-7jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1920.289855072464" y="802.90178571428567"/>
-        </scene>
-        <!--Biceps Chart View Controller-->
-        <scene sceneID="ZWq-OO-yH5">
-            <objects>
-                <viewController id="hVB-gj-AMa" customClass="BicepsChartViewController" customModule="IOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ma9-Zc-wm3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biceps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIC-dj-z1x">
-                                <rect key="frame" x="161" y="87" width="96" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ1-2m-ki4">
-                                <rect key="frame" x="76" y="90" width="40" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBack:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="8c2-Vr-co8"/>
-                                    <action selector="goBack:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="O3h-1m-Dd2"/>
-                                    <action selector="goChest:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="oJ6-1b-13A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzA-6D-QrG">
-                                <rect key="frame" x="291" y="90" width="48" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Chest"/>
-                                <connections>
-                                    <action selector="goChest:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="t35-Te-iQA"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMk-4v-NIU" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="20" y="197" width="374" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVw-ZI-6zK">
-                                <rect key="frame" x="20" y="599" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchHammerCurlAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="mTI-Mk-V4N"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSk-36-erp">
-                                <rect key="frame" x="20" y="669" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchEzBarCurlAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="S0m-Ni-VzZ"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-PM-aCE">
-                                <rect key="frame" x="19" y="741" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchCurlAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="YIm-aA-qgQ"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-gF-bPJ">
-                                <rect key="frame" x="210" y="599" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchPulloverAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="v8l-fj-J1W"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-ii-7Pv">
-                                <rect key="frame" x="210" y="669" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchCloseGripBPAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="waM-T1-VWJ"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-sZ-OMP">
-                                <rect key="frame" x="210" y="741" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchReverseCurlAction:" destination="hVB-gj-AMa" eventType="primaryActionTriggered" id="Ete-Mj-3Bm"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hammer Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfD-p5-7g0">
-                                <rect key="frame" x="74" y="601" width="126" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ez Bar Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-hz-1fd">
-                                <rect key="frame" x="76" y="671" width="105" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-cx-1th">
-                                <rect key="frame" x="76" y="743" width="40" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pullover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-sF-bxZ">
-                                <rect key="frame" x="265" y="601" width="76" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Close Grip BP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dN-ou-iRT">
-                                <rect key="frame" x="265" y="671" width="132" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reverse Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf4-WN-1Yc">
-                                <rect key="frame" x="265" y="743" width="121" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hM6-JP-Ssc"/>
-                    </view>
-                    <connections>
-                        <outlet property="chart" destination="aMk-4v-NIU" id="mdQ-tZ-v53"/>
-                        <outlet property="closeGripBPLabel" destination="9dN-ou-iRT" id="U2g-aJ-5Mx"/>
-                        <outlet property="curlLabel" destination="yFk-cx-1th" id="JUn-wP-ccg"/>
-                        <outlet property="ezBarCurlLable" destination="sgL-hz-1fd" id="xDZ-vE-x8c"/>
-                        <outlet property="hammerCurlLabel" destination="vfD-p5-7g0" id="JDw-g1-KUR"/>
-                        <outlet property="pulloverLabel" destination="tPq-sF-bxZ" id="5Pe-5C-IRT"/>
-                        <outlet property="reverseCurlLabel" destination="Pf4-WN-1Yc" id="QaZ-p8-oJf"/>
-                        <outlet property="switchCloseGripBP" destination="YU4-ii-7Pv" id="Cbq-N8-X5n"/>
-                        <outlet property="switchCurl" destination="Ffq-PM-aCE" id="xw1-on-85l"/>
-                        <outlet property="switchEzBarCurl" destination="fSk-36-erp" id="hR9-Mk-uXk"/>
-                        <outlet property="switchHammerCurl" destination="fVw-ZI-6zK" id="5Ji-Nu-7t6"/>
-                        <outlet property="switchPullover" destination="tcc-gF-bPJ" id="W61-lw-9gB"/>
-                        <outlet property="switchReverseCurl" destination="aK3-sZ-OMP" id="FdC-Tz-7wh"/>
-                        <segue destination="xzV-FV-tlK" kind="presentation" identifier="backChart" id="Jy5-fs-J4B"/>
-                        <segue destination="xtO-xF-uVi" kind="presentation" identifier="chestChart" id="KZx-BV-6xD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vy-I7-qnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2807" y="1347"/>
-        </scene>
-        <!--Chest Chart View Controller-->
-        <scene sceneID="Fih-zO-3kF">
-            <objects>
-                <viewController id="xtO-xF-uVi" customClass="ChestChartViewController" customModule="IOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AOW-Mu-Xgp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfW-QM-a7A">
-                                <rect key="frame" x="169" y="82" width="85" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-KF-QtI">
-                                <rect key="frame" x="76" y="85" width="40" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBack:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="s5k-lA-vkB"/>
-                                    <action selector="goChest:" destination="xzV-FV-tlK" eventType="primaryActionTriggered" id="IFO-Qw-W6Z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kp-OF-Ts9">
-                                <rect key="frame" x="287" y="85" width="55" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Biceps"/>
-                                <connections>
-                                    <action selector="goBiceps:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="oFz-nu-ozk"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNj-30-GjY" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="20" y="173" width="374" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28S-kf-x8y">
-                                <rect key="frame" x="20" y="584" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="swtichBarbellBPAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="TOi-YB-Gga"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LYe-pc-uP0">
-                                <rect key="frame" x="20" y="651" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchCableFlyAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="4ja-AX-OxL"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-JS-qcX">
-                                <rect key="frame" x="20" y="713" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChestDipsAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="vLv-tc-4t9"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eah-X7-7cd">
-                                <rect key="frame" x="184" y="586" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchDeclinedBarbellBPAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="KF9-hu-1Ho"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Miu-1Z-PYz">
-                                <rect key="frame" x="184" y="649" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchInclinedBarbellBPAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="CrI-m7-Roc"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-Ld-eYw">
-                                <rect key="frame" x="184" y="713" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchDumbellSqueesePressAction:" destination="xtO-xF-uVi" eventType="primaryActionTriggered" id="AjT-gb-az7"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barbell BP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-Q2-pTY">
-                                <rect key="frame" x="76" y="585" width="102" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cable Fly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc6-NY-MAE">
-                                <rect key="frame" x="76" y="653" width="89" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chest Dips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsd-Hp-GYN">
-                                <rect key="frame" x="76" y="715" width="105" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Declined Barbell " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-oN-paZ">
-                                <rect key="frame" x="239" y="588" width="160" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inclined Barbell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyl-rC-qbZ">
-                                <rect key="frame" x="239" y="652" width="146" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dumbell Squeese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fen-Kt-11S">
-                                <rect key="frame" x="239" y="713" width="168" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="QB8-XK-s7k"/>
-                    </view>
-                    <connections>
-                        <outlet property="barbellBPLabel" destination="AL5-Q2-pTY" id="xYz-sO-Vgg"/>
-                        <outlet property="cableFlyLabel" destination="Lc6-NY-MAE" id="CBM-AJ-KIx"/>
-                        <outlet property="chart" destination="tNj-30-GjY" id="cRj-9Z-RTR"/>
-                        <outlet property="chestDipsLabel" destination="Dsd-Hp-GYN" id="k4r-87-TBR"/>
-                        <outlet property="declinedBarbellBPLabel" destination="h5F-oN-paZ" id="fJ6-F6-rWB"/>
-                        <outlet property="dumbellSqueesePressLabel" destination="Fen-Kt-11S" id="4ua-Ar-Nms"/>
-                        <outlet property="inclinedBarbellBPLabel" destination="lyl-rC-qbZ" id="W5D-xy-svm"/>
-                        <outlet property="switchBarbellBP" destination="28S-kf-x8y" id="xTD-uO-Qbb"/>
-                        <outlet property="switchCableFly" destination="LYe-pc-uP0" id="ihG-ZQ-fJG"/>
-                        <outlet property="switchChestDips" destination="eAI-JS-qcX" id="eHV-zU-sbG"/>
-                        <outlet property="switchDeclinedBarbellBP" destination="Eah-X7-7cd" id="aQT-TG-qim"/>
-                        <outlet property="switchDumbellSqueesePress" destination="E2F-Ld-eYw" id="cJc-xN-b2D"/>
-                        <outlet property="switchInclinedBarbellBP" destination="Miu-1Z-PYz" id="JQR-9c-Nm2"/>
-                        <segue destination="xzV-FV-tlK" kind="presentation" identifier="backChart" id="ndH-xX-AaO"/>
-                        <segue destination="hVB-gj-AMa" kind="presentation" identifier="bicepsChart" id="ZrD-DL-tUM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QIq-9t-nv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3657" y="761"/>
         </scene>
         <!--Settings-->
         <scene sceneID="lTU-Aq-Ab6">
@@ -1046,9 +699,4 @@
         <image name="chest2" width="600" height="400"/>
         <image name="user" width="500" height="755"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vGT-II-dor"/>
-        <segue reference="OFF-WF-2rs"/>
-        <segue reference="ZYQ-nE-fvD"/>
-    </inferredMetricsTieBreakers>
 </document>

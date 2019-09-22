@@ -27,7 +27,6 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         self.tableView.dataSource = self
         userImage.image = userModel.getImage()
        
-        print(user.getUser().weights)
         userImage.layer.cornerRadius = userImage.frame.size.height / 2
         dateView.text = dateModel.getDate()
     }

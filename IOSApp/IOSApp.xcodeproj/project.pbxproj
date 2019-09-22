@@ -11,8 +11,6 @@
 		2D226AD3233388630008A59B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D226AD2233388630008A59B /* Label.swift */; };
 		2D3493822331EF4C009241C2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3493812331EF4C009241C2 /* ChartViewController.swift */; };
 		2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F264E2327B53A00520D52 /* SettingsViewController.swift */; };
-		2DA329FC233491C700C2E6E3 /* ChestChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA329FB233491C700C2E6E3 /* ChestChartViewController.swift */; };
-		2DA329FE23349E6000C2E6E3 /* BicepsChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA329FD23349E6000C2E6E3 /* BicepsChartViewController.swift */; };
 		44169262E6E1E294127B6632 /* Pods_IOSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E11D24248D863330EFEBFE8 /* Pods_IOSAppUITests.framework */; };
 		5FF7E4D1C1DB4709176A4DC7 /* Pods_IOSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EEF6C680644B186D64EB88 /* Pods_IOSAppTests.framework */; };
 		842E4478AADF658D608C0FC7 /* Pods_IOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85523E3263A165E559AD39 /* Pods_IOSApp.framework */; };
@@ -63,8 +61,6 @@
 		2D226AD2233388630008A59B /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		2D3493812331EF4C009241C2 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		2D6F264E2327B53A00520D52 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2DA329FB233491C700C2E6E3 /* ChestChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestChartViewController.swift; sourceTree = "<group>"; };
-		2DA329FD23349E6000C2E6E3 /* BicepsChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicepsChartViewController.swift; sourceTree = "<group>"; };
 		3E11D24248D863330EFEBFE8 /* Pods_IOSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6385CE7B261CE1F77B5854 /* Pods-IOSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOSAppUITests/Pods-IOSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		595085E3111B4BBF4FBC8A1C /* Pods-IOSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IOSAppUITests/Pods-IOSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,8 +216,6 @@
 				C9E46F18232DF93A0037A582 /* UserViewController.swift */,
 				C9E46F1A232E09340037A582 /* app.swift */,
 				2D3493812331EF4C009241C2 /* ChartViewController.swift */,
-				2DA329FB233491C700C2E6E3 /* ChestChartViewController.swift */,
-				2DA329FD23349E6000C2E6E3 /* BicepsChartViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -474,7 +468,6 @@
 				8681610A232CBEA000F0ABCE /* ProfileViewController.swift in Sources */,
 				C9E46F19232DF93A0037A582 /* UserViewController.swift in Sources */,
 				C9E3C992232CD5810070C9C7 /* ExcericeViewController.swift in Sources */,
-				2DA329FE23349E6000C2E6E3 /* BicepsChartViewController.swift in Sources */,
 				C9E8008223276EA100404378 /* Exerice.swift in Sources */,
 				C9E46F15232DE9720037A582 /* DateViewController.swift in Sources */,
 				C9E3C990232CB3F80070C9C7 /* WeightViewController.swift in Sources */,
@@ -484,7 +477,6 @@
 				C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */,
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,
-				2DA329FC233491C700C2E6E3 /* ChestChartViewController.swift in Sources */,
 				2D6F264F2327B53A00520D52 /* SettingsViewController.swift in Sources */,
 				2D226AD3233388630008A59B /* Label.swift in Sources */,
 				C9E46F17232DF7FA0037A582 /* User.swift in Sources */,

@@ -53,10 +53,12 @@ struct User {
     
     mutating func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
         var isExist = false;
+        print(label)
         for (index, item) in self.weights.enumerated(){
             if (item.label == label) {
                 isExist = true
                 self.weights[index].newRecord(weight: weight)
+                print(self.weights[index].label)
             }
         }
         if (!isExist) {

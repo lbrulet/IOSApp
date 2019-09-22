@@ -52,8 +52,7 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let selectedMuscle = selectedMuscle {
-            user.newRecords(label: selectedMuscle.exercice, weight: Double(weights[indexPath.row])!, color: nil)
-            print(user.getUser().weights[0])
+            user.newRecords(label: selectedMuscle.exercice, weight: Double(weights[indexPath.row])!, color: nil, typeMuscle: nil)
         }
     }
 }
