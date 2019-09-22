@@ -11,27 +11,37 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var CircularProfilImage: UIImageView!
+    @IBOutlet weak var sizeResult: UILabel!
+    @IBOutlet weak var nameResult: UILabel!
+    @IBOutlet weak var weightResult: UILabel!
+    @IBOutlet weak var genderResult: UILabel!
+    @IBOutlet weak var birthDateResult: UILabel!
+    @IBOutlet weak var ageResult: UILabel!
+    @IBOutlet weak var modifyBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setData()
         CircularProfilImage.clipsToBounds = true
         CircularProfilImage.layer.masksToBounds = true
         CircularProfilImage.layer.cornerRadius = CircularProfilImage.bounds.width / 2
         
     }
     
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-       
+    override func viewWillAppear(_ animated: Bool) {
+        setData()
+        super.viewWillAppear(animated)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setData() {
+        CircularProfilImage.image = user.getUser().image
+        ageResult.text = "I'm " + user.getUser().calculateAge() + " Years old"
+        sizeResult.text = String(user.getUser().size) + " cm"
+        nameResult.text = user.getUser().firstName + " " + user.getUser().lastName
+        weightResult.text = String(user.getUser().weight) + " Kg"
+        genderResult.text = user.getUser().gender.rawValue
+        birthDateResult.text = user.getUser().getBirthDate()
     }
-    */
 
 }

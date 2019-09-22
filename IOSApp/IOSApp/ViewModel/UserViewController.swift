@@ -13,11 +13,15 @@ public struct UserViewController {
     private var user: User
     
     init() {
-        self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
     }
     
     func getImage() -> UIImage? {
-        return UIImage(named: self.user.image)
+        return self.user.image
+    }
+    
+    mutating func setImage(image: UIImage) {
+        self.user.setImage(image: image)
     }
     
     mutating func setWeight(weight: Float) {
@@ -32,6 +36,10 @@ public struct UserViewController {
         self.user.setGender(gender: gender)
     }
     
+    mutating func setBirthDate(date:String) {
+        self.user.setBirthDate(birthDate: date)
+    }
+    
     mutating func setFirstName(firstName: String) {
         self.user.setFirstName(firstName: firstName)
     }
@@ -44,7 +52,7 @@ public struct UserViewController {
         self.user.newRecords(label: label, weight: weight)
     }
     
-    func getUser() -> User {
+    mutating func getUser() -> User {
         return self.user
     }
 }

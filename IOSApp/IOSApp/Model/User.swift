@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
-enum Gender:String {
+enum Gender:String, CaseIterable {
     case male = "Male", female = "Female"
+    static var allCases: [Gender] = [.male, .female]
 }
 
 struct WeightCollector {
@@ -27,21 +29,25 @@ struct WeightCollector {
 }
 
 struct User {
-    var image:String
+    var image:UIImage
     var firstName:String
     var lastName:String
     var weight:Float
     var size:Float
     var gender:Gender
     var weights:[WeightCollector] = []
+    var birthDate:Date
+    var dateFormatter:DateFormatter = DateFormatter()
     
-    init(firstName: String, lastName: String, image: String, weight: Float, size: Float, gender: Gender) {
+    init(firstName: String, lastName: String, image: String, weight: Float, size: Float, gender: Gender, birthDate: String) {
+        self.dateFormatter.dateFormat = "yyyy/MM/dd"
         self.firstName = firstName
         self.lastName = lastName
-        self.image = image
+        self.image = UIImage(named: image)!
         self.weight = weight
         self.size = size
         self.gender = gender
+        self.birthDate = self.dateFormatter.date(from: birthDate)!
     }
     
     mutating func newRecords(label: String, weight: Int) {
@@ -55,6 +61,24 @@ struct User {
         if (!isExist) {
             self.weights.append(WeightCollector(label: label, weight: weight))
         }
+    }
+    
+    func getBirthDate() -> String {
+        return self.dateFormatter.string(from: self.birthDate)
+    }
+    
+    func calculateAge() -> String {
+        let now = Date()
+        let birthday: Date = self.birthDate
+        let calendar = Calendar.current
+        
+        let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
+        let age = ageComponents.year!
+        return String(age)
+    }
+    
+    mutating func setImage(image: UIImage) {
+        self.image = image
     }
     
     mutating func setWeight(weight: Float) {
@@ -75,5 +99,9 @@ struct User {
     
     mutating func setLastName(lastName: String) {
         self.lastName = lastName
+    }
+    
+    mutating func setBirthDate(birthDate: String) {
+        self.birthDate = self.dateFormatter.date(from: birthDate)!
     }
 }
