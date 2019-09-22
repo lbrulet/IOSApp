@@ -10,7 +10,6 @@ import Foundation
 
 struct Exercice {
     var label:String
-    
     init(label:String) {
         self.label = label
     }

@@ -42,7 +42,7 @@ class ProfileModifyingViewController: UIViewController, UIPickerViewDelegate, UI
     }
     
     @objc func takingPic() {
-        imageVc.sourceType = .camera //replace by .photoLibrary if ran in an emulator
+        imageVc.sourceType = .photoLibrary //replace by .photoLibrary if ran in an emulator
         imageVc.allowsEditing = true
         imageVc.delegate = self
         present(imageVc, animated: true)

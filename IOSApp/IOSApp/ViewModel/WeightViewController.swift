@@ -33,6 +33,8 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return weights.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WGSCell", for: indexPath)
         let label = cell.viewWithTag(1000) as? UILabel
@@ -40,18 +42,18 @@ class WeightViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if let label = label {
             let text = weights[indexPath.row] + " kgs"
             label.text = text
-            cell.layer.masksToBounds = true
-            cell.layer.cornerRadius = 20
-            cell.layer.borderWidth = 1
-            cell.layer.borderColor = UIColor.black.cgColor
+            label.layer.masksToBounds = true
+            label.layer.cornerRadius = 5
+            label.layer.borderWidth = 1
+            label.layer.borderColor = UIColor.black.cgColor
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let selectedMuscle = selectedMuscle {
-            user.newRecords(label: selectedMuscle.exercice, weight: Int(weights[indexPath.row])!)
-            print(user.getUser().weights)
+            user.newRecords(label: selectedMuscle.exercice, weight: Double(weights[indexPath.row])!, color: nil, typeMuscle: nil)
+            print(user.getUser().weights[0])
         }
     }
 }

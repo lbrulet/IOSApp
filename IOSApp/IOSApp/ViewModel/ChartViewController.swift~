@@ -288,6 +288,11 @@ class ChartViewController: UIViewController {
         super.viewWillTransition(to: size, with: coordinator)
         
         // Redraw chart on rotation
+<<<<<<< HEAD
+        //etNeedsDisplay()
+=======
+        //chart.setNeedsDisplay()
+>>>>>>> 21c9cc185a3fb9085eb8652ac8348add3ad713c4
         
     }
     

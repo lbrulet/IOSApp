@@ -16,15 +16,21 @@ enum Gender:String, CaseIterable {
 
 struct WeightCollector {
     var label:String
-    var weights:[Int] = [0]
+    var status:String
+    var color:UIColor
+    var typeMuscle:String
+    var weights:[(x: Double, y: Double)] = []
     
-    init(label: String, weight: Int) {
+    init(label: String, weight: Double, color: UIColor, typeMuscle: String) {
         self.label = label
-        self.weights.append(weight)
+        self.status = STATUS_ON
+        self.weights.append((x: 1, y: weight))
+        self.color = color
+        self.typeMuscle = typeMuscle
     }
     
-    mutating func newRecord(weight: Int) {
-        weights.append(weight)
+    mutating func newRecord(weight: Double) {
+        weights.append((x: Double(weights.count + 1), y: weight))
     }
 }
 
@@ -50,7 +56,7 @@ struct User {
         self.birthDate = self.dateFormatter.date(from: birthDate)!
     }
     
-    mutating func newRecords(label: String, weight: Int) {
+    mutating func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
         var isExist = false;
         for (index, item) in self.weights.enumerated(){
             if (item.label == label) {
@@ -59,7 +65,9 @@ struct User {
             }
         }
         if (!isExist) {
-            self.weights.append(WeightCollector(label: label, weight: weight))
+            if let color = color, let typeMuscle = typeMuscle {
+                self.weights.append(WeightCollector(label: label, weight: weight, color: color, typeMuscle: typeMuscle))
+            }
         }
     }
     
