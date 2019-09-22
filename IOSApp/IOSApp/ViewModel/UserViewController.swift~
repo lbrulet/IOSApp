@@ -14,7 +14,10 @@ public struct UserViewController {
     private var user: User
     
     init() {
+<<<<<<< HEAD
         self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
+=======
+        self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
         self.user.newRecords(label: "Barbell bench press", weight: 0, color: COLOR_PINK, typeMuscle: "Chest")
         self.user.newRecords(label: "Cable Fly", weight: 0, color: COLOR_RED, typeMuscle: "Chest")
         self.user.newRecords(label: "Chest Dips", weight: 0, color: COLOR_BLUE, typeMuscle: "Chest")
@@ -28,6 +31,7 @@ public struct UserViewController {
         self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
         self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
         self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
+>>>>>>> 21c9cc185a3fb9085eb8652ac8348add3ad713c4
     }
     
     func getMuscleDataChart(typeMuscle: String) -> DataChartSeries {
@@ -41,16 +45,6 @@ public struct UserViewController {
             }
         }
         return DataChartSeries(dataSet: dataset)
-    }
-    
-    func getListMuscle(typeMuscle: String) -> [WeightCollector] {
-        var data:[WeightCollector] = []
-        for weightCollector in self.user.weights {
-            if (weightCollector.typeMuscle == typeMuscle) {
-                    data.append(weightCollector)
-            }
-        }
-        return data
     }
  
     func getImage() -> UIImage? {

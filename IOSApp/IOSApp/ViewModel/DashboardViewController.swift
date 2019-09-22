@@ -31,6 +31,11 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         dateView.text = dateModel.getDate()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        userImage.image = user.getImage()
+        super.viewWillAppear(animated)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.count
     }
