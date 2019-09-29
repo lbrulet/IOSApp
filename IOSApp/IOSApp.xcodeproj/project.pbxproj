@@ -25,6 +25,7 @@
 		9E4B365A2326469D00608C32 /* IOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B36592326469D00608C32 /* IOSAppUITests.swift */; };
 		9E4B3677232657C100608C32 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B3676232657C100608C32 /* Muscle.swift */; };
 		9E4B367B23265C9100608C32 /* MuscleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B367A23265C9100608C32 /* MuscleViewModel.swift */; };
+		C9AD9288234089B70068BA28 /* FetchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD9287234089B70068BA28 /* FetchApi.swift */; };
 		C9E31BCA232F5A8E00AFE854 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BC9232F5A8E00AFE854 /* UserTests.swift */; };
 		C9E31BCC232F634200AFE854 /* ExerciceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCB232F634200AFE854 /* ExerciceTests.swift */; };
 		C9E31BCE232F63D300AFE854 /* MuscleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E31BCD232F63D300AFE854 /* MuscleTests.swift */; };
@@ -84,6 +85,7 @@
 		9E4B365B2326469D00608C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4B3676232657C100608C32 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		9E4B367A23265C9100608C32 /* MuscleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewModel.swift; sourceTree = "<group>"; };
+		C9AD9287234089B70068BA28 /* FetchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchApi.swift; sourceTree = "<group>"; };
 		C9E31BC9232F5A8E00AFE854 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		C9E31BCB232F634200AFE854 /* ExerciceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceTests.swift; sourceTree = "<group>"; };
 		C9E31BCD232F63D300AFE854 /* MuscleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleTests.swift; sourceTree = "<group>"; };
@@ -153,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				9E4B3669232648A500608C32 /* ViewModel */,
-				9E4B36682326489B00608C32 /* View */,
 				9E4B36672326488500608C32 /* Model */,
 				9E4B36362326469C00608C32 /* AppDelegate.swift */,
 				9E4B36402326469D00608C32 /* Assets.xcassets */,
@@ -193,6 +194,7 @@
 				C9E46F16232DF7FA0037A582 /* User.swift */,
 				2D226ACE23333E410008A59B /* Chart.swift */,
 				2D226AD2233388630008A59B /* Label.swift */,
+				C9AD9287234089B70068BA28 /* FetchApi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +221,7 @@
 				C9E46F1A232E09340037A582 /* app.swift */,
 				2D3493812331EF4C009241C2 /* ChartViewController.swift */,
 				86E5FE632336075B00446580 /* ProfileModifyingViewController.swift */,
+				9E4B36682326489B00608C32 /* View */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				C9E46F1B232E09340037A582 /* app.swift in Sources */,
 				2D226ACF23333E410008A59B /* Chart.swift in Sources */,
 				9E4B363F2326469C00608C32 /* IOSApp.xcdatamodeld in Sources */,
+				C9AD9288234089B70068BA28 /* FetchApi.swift in Sources */,
 				C9E3C994232CE2570070C9C7 /* DashboardViewController.swift in Sources */,
 				9E4B3677232657C100608C32 /* Muscle.swift in Sources */,
 				9E4B36372326469C00608C32 /* AppDelegate.swift in Sources */,

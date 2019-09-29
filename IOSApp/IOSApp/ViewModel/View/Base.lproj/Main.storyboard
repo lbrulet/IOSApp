@@ -32,6 +32,9 @@
                                 <rect key="frame" x="299" y="140" width="40" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="xzV-FV-tlK" eventType="touchUpInside" id="gcs-fB-cLw"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-fK-k67" customClass="Chart" customModule="SwiftChart">
                                 <rect key="frame" x="20" y="184.5" width="374" height="352"/>

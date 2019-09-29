@@ -27,10 +27,61 @@ class ChartViewController: UIViewController, UICollectionViewDelegate, UICollect
     var listMuscle:[WeightCollector] = []
     @IBOutlet weak var chart: Chart!
     
+    @IBAction func BackBtn(_ sender: Any) {
+        self.current = "Back"
+        chart.removeAllSeries()
+        Data = user.getMuscleDataChart(typeMuscle: current)
+        listMuscle = user.getListMuscle(typeMuscle: current)
+        var index = 0
+        for item in listMuscle {
+            let cell = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0))
+            let titleView = cell?.viewWithTag(1001) as? UILabel
+            
+            if let titleView = titleView {
+                titleView.text = item.label
+            }
+            index += 1
+        }
+        chart.add(Data.getDataOn())
+        collectionView.reloadData()
+    }
+
     @IBAction func ChestBtn(_ sender: Any) {
+        self.current = "Chest"
+        chart.removeAllSeries()
+        Data = user.getMuscleDataChart(typeMuscle: current)
+        listMuscle = user.getListMuscle(typeMuscle: current)
+        var index = 0
+        for item in listMuscle {
+            let cell = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0))
+            let titleView = cell?.viewWithTag(1001) as? UILabel
+            
+            if let titleView = titleView {
+                titleView.text = item.label
+            }
+            index += 1
+        }
+        chart.add(Data.getDataOn())
+        collectionView.reloadData()
     }
     
     @IBAction func BicepsBtn(_ sender: Any) {
+        self.current = "Biceps"
+        chart.removeAllSeries()
+        Data = user.getMuscleDataChart(typeMuscle: current)
+        listMuscle = user.getListMuscle(typeMuscle: current)
+        var index = 0
+        for item in listMuscle {
+            let cell = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0))
+            let titleView = cell?.viewWithTag(1001) as? UILabel
+            
+            if let titleView = titleView {
+                titleView.text = item.label
+            }
+            index += 1
+        }
+        chart.add(Data.getDataOn())
+        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,11 +107,13 @@ class ChartViewController: UIViewController, UICollectionViewDelegate, UICollect
         let switchView = cell.viewWithTag(1000) as? UISwitch
         let titleView = cell.viewWithTag(1001) as? UILabel
         
-        titleView!.text = listMuscle[indexPath.row].label
-        titleView!.textColor = listMuscle[indexPath.row].color
-        switchView!.tag = indexPath.row
-        switchView!.addTarget(self, action: #selector(yourFunc),
+        if let titleView = titleView, let switchView = switchView {
+        titleView.text = self.listMuscle[indexPath.row].label
+        titleView.textColor = self.listMuscle[indexPath.row].color
+        switchView.tag = indexPath.row
+        switchView.addTarget(self, action: #selector(yourFunc),
                                  for: UIControl.Event.valueChanged)
+        }
         return cell
     }
     

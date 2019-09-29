@@ -3,29 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		060268842DEA4AF7FDCDB5C1C5D5DEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */; };
+		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45028D7CAFDFC2C38C77A365843CB4F3 /* SwiftChart-dummy.m */; };
 		133050DC4569C9288C4B8E94B4D4F538 /* Pods-IOSAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76899CE6449F4DCCAF887BE84FC42787 /* Pods-IOSAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */; };
+		16CBCB3BE567469F45C84C0295238759 /* Pods-IOSApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 870EFAC4A13AE35632597F7048929901 /* Pods-IOSApp-dummy.m */; };
+		260B61788FDD60C0D19225F5FE22FAAB /* NikkaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2FC41158992CECFDDDE5CF30883A83 /* NikkaError.swift */; };
+		2C38DE728EB1AEA3A88E0EE2B1A7B916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		3338B8BEC4830A59065CFA3584E8AC0E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3971BC3D227D2671716B1142EC2DD07 /* Request.swift */; };
+		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBCEEC44BEBAED04D8C9FA839495AD0 /* ChartColors.swift */; };
 		3E0912DB056F94101A97DB7DED56FF7B /* Pods-IOSAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D373E9EB05377C058AA2031C7EACB /* Pods-IOSAppTests-dummy.m */; };
-		49449248744B13F95460332EF0E6D6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		44742113EABAC805D7DECD8484F1FB30 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0CB99F44C34FF969CB0DCEC6FBD34 /* ParameterEncoding.swift */; };
+		4E8B54D219154D80AC2B25B73BA4F4E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		5F22D319C0F7E2C12471A5ECF89D9CD5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46574367D57D3EA61008A3BF164E3BC1 /* Route.swift */; };
 		71BCDA2C42620C01659A4A1353AC29AC /* Pods-IOSAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3BAEF37B45E4CF4F92B67094B2707D /* Pods-IOSAppUITests-dummy.m */; };
-		88965BF4BF9BB59A2A993F9E1805D434 /* Pods-IOSApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 400655587550955ABA62AAE6DC286207 /* Pods-IOSApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D20D6D3E32427B24DE55BBCCEDB715 /* Pods-IOSApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 400655587550955ABA62AAE6DC286207 /* Pods-IOSApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87C4124BB352EE2DEC856D75EFEEFC4B /* Nikka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DBCD7B0E95E9AF36512C178156FDA /* Nikka-dummy.m */; };
+		9A418119D96317A9D21EE13A3CF98C39 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7348EADF0E683A950AC809B7C59B67 /* SessionManager.swift */; };
 		9B683B8C9F0A34F08D8B85FF3EFB289A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AB3E13C060ED046B512D1928264B3B /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AABB25CD63C72262E7FFE6F57470ACE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		B61A088C6E8F0B37D0675EC3E097ED84 /* MultipartForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C1BF14C266A959EBD3F17CB2B0525 /* MultipartForm.swift */; };
 		B6613C0A904ECFDCC0150613D7AF1206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		BCFC52501E1D54BC3C5A9387FE4B8086 /* Pods-IOSAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A35285431483C6BEF52ACCFA0CD2488F /* Pods-IOSAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB13F972F3B77B583645B30A456160E /* Chart.swift */; };
-		EFF4F71FA0BD4488AF0F8A2B8054F0CC /* Pods-IOSApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 870EFAC4A13AE35632597F7048929901 /* Pods-IOSApp-dummy.m */; };
-		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */; };
+		DA4CF7AB6AB2053C04F80696BA13043C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793697D26A77124E5E943C8B2781A466 /* Response.swift */; };
+		DCB5298D46EEBCB11AE4F42F98D26B04 /* Nikka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D79BCABEB6814C5C5E0192ED69F420D5 /* Nikka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E622FE25C2DA3A0DF97689BD2B600F6F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DAEE7061F4FD544AA3FE099657032 /* Result.swift */; };
+		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD490438C8923E75AA4315F416E50F /* Chart.swift */; };
+		EED1972CE0394D710E1352EBE575CFFE /* HTTPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDFE05CBFD80AE884DDB6F73F9E58E6 /* HTTPProvider.swift */; };
+		F2F56ECEB5F91E2A2521418ABA6BF5EB /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE87768ECFD87FED713F4D123C52ECF /* Future.swift */; };
+		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7F81B8DB464A55EC2DA110CCB3C31 /* ChartSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8144E03093B3516B4DA57CA2C0090C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7BD5B8067AD0B7AFB7967E30BF1BB8;
+			remoteInfo = SwiftChart;
+		};
 		9A28FFC18C0FC3605FFCF5FA738FFC6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -33,12 +53,12 @@
 			remoteGlobalIDString = E2F0D5AB498E18F30A129AF2E1377FD7;
 			remoteInfo = "Pods-IOSApp";
 		};
-		BEED07CB3944C00B740744B76B169CBC /* PBXContainerItemProxy */ = {
+		B98A1C770DFCBD3A02E56373A67AFB54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E7BD5B8067AD0B7AFB7967E30BF1BB8;
-			remoteInfo = SwiftChart;
+			remoteGlobalIDString = 3C7EA92C35BC59ED33F5F769B562522A;
+			remoteInfo = Nikka;
 		};
 		CBC772600EF4CA79628A7CDA590C95D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -50,47 +70,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = Source/ChartSeries.swift; sourceTree = "<group>"; };
 		0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftChart.framework; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D373E9EB05377C058AA2031C7EACB /* Pods-IOSAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOSAppTests-dummy.m"; sourceTree = "<group>"; };
-		1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = Source/ChartColors.swift; sourceTree = "<group>"; };
-		2CB13F972F3B77B583645B30A456160E /* Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Source/Chart.swift; sourceTree = "<group>"; };
+		06AB0BE7CD55C965A59BAD00CB24877F /* Nikka-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nikka-Info.plist"; sourceTree = "<group>"; };
+		1BD416E088ACC1E42C74BB70819D1FC0 /* SwiftChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftChart-Info.plist"; sourceTree = "<group>"; };
+		1E2FC41158992CECFDDDE5CF30883A83 /* NikkaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NikkaError.swift; path = Sources/NikkaError.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3AE87768ECFD87FED713F4D123C52ECF /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Sources/Future.swift; sourceTree = "<group>"; };
+		3C7348EADF0E683A950AC809B7C59B67 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Sources/SessionManager.swift; sourceTree = "<group>"; };
 		400655587550955ABA62AAE6DC286207 /* Pods-IOSApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOSApp-umbrella.h"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		438D11071C0A1C66328CA816D007B868 /* Pods-IOSAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSAppUITests-Info.plist"; sourceTree = "<group>"; };
 		44E8562BC1C131C6D753DA1F5B662FF2 /* Pods-IOSAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45028D7CAFDFC2C38C77A365843CB4F3 /* SwiftChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftChart-dummy.m"; sourceTree = "<group>"; };
+		46574367D57D3EA61008A3BF164E3BC1 /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Sources/Route.swift; sourceTree = "<group>"; };
+		484DAEE7061F4FD544AA3FE099657032 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		4C2E3CE15E1A6C88B8F00734515C1531 /* SwiftChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-prefix.pch"; sourceTree = "<group>"; };
 		4E28571C8053A58EFE7ABA7A8AAFD742 /* Pods-IOSAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IOSAppTests.modulemap"; sourceTree = "<group>"; };
 		4FAA72CBEE6B2E2DD61BFD528A2DD350 /* Pods-IOSApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		52CD490438C8923E75AA4315F416E50F /* Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Source/Chart.swift; sourceTree = "<group>"; };
 		5610D46E59D74B0903FF2D04183960C4 /* Pods-IOSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		59BFD5222A27EA5DD15B9044A8B76DA1 /* Pods-IOSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F3BAEF37B45E4CF4F92B67094B2707D /* Pods-IOSAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOSAppUITests-dummy.m"; sourceTree = "<group>"; };
 		734C66BFF34D007322D695BA52828E30 /* Pods-IOSAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		759C36A1D79C7651C27A76208E187653 /* Nikka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nikka.framework; path = Nikka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76899CE6449F4DCCAF887BE84FC42787 /* Pods-IOSAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOSAppTests-umbrella.h"; sourceTree = "<group>"; };
+		793697D26A77124E5E943C8B2781A466 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
+		7BDFE05CBFD80AE884DDB6F73F9E58E6 /* HTTPProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPProvider.swift; path = Sources/HTTPProvider.swift; sourceTree = "<group>"; };
 		83208F0CDF9A9D549D652A123213BCC9 /* Pods_IOSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IOSAppUITests.framework; path = "Pods-IOSAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EFAC4A13AE35632597F7048929901 /* Pods-IOSApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOSApp-dummy.m"; sourceTree = "<group>"; };
-		8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.xcconfig; sourceTree = "<group>"; };
 		8988887730680EE7505C9B17141BDD18 /* Pods_IOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IOSApp.framework; path = "Pods-IOSApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A7F81B8DB464A55EC2DA110CCB3C31 /* ChartSeries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = Source/ChartSeries.swift; sourceTree = "<group>"; };
 		96BB9E63434C4AA9D79B3F9F367B0A40 /* Pods-IOSApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IOSApp.modulemap"; sourceTree = "<group>"; };
 		9C3E8C4BE3A26DAB85614D3C36EADF58 /* Pods-IOSAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOSAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E080BC0CD223CF34EFA798FB730E0EF /* SwiftChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-prefix.pch"; sourceTree = "<group>"; };
 		A35285431483C6BEF52ACCFA0CD2488F /* Pods-IOSAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOSAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		A37A85B7FB28C1246ABA1EF8F50F7764 /* Nikka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nikka.xcconfig; sourceTree = "<group>"; };
+		A5AB3E13C060ED046B512D1928264B3B /* SwiftChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-umbrella.h"; sourceTree = "<group>"; };
+		A886DA8C49495E65278E09A68754790B /* SwiftChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.xcconfig; sourceTree = "<group>"; };
+		A9109946F53E578247D2D70306EB71AE /* Nikka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nikka-prefix.pch"; sourceTree = "<group>"; };
 		AA0CE26882A2F8D58C5E8664481C601B /* Pods-IOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AF386234290B34DDBB53F50E6391DFC3 /* Pods-IOSApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOSApp-frameworks.sh"; sourceTree = "<group>"; };
 		B2473C6A4CB7C5AA6D9545B7FAD9C065 /* Pods-IOSApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOSApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BB1A6D8779017F1A26D99A5358B479BF /* Pods-IOSAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSAppTests-Info.plist"; sourceTree = "<group>"; };
+		C52C1BF14C266A959EBD3F17CB2B0525 /* MultipartForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartForm.swift; path = Sources/MultipartForm.swift; sourceTree = "<group>"; };
+		C87DBCD7B0E95E9AF36512C178156FDA /* Nikka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nikka-dummy.m"; sourceTree = "<group>"; };
+		CB627CD327045E19C6EA44BDA7B1617D /* SwiftChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftChart.modulemap; sourceTree = "<group>"; };
 		CB929E346FF053A156F87540C3516425 /* Pods-IOSAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CEF1591FA4780E68EC5482DFF01CDEFD /* Pods-IOSApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSApp-Info.plist"; sourceTree = "<group>"; };
 		D1AEB516DC63706B3E3DA7EC9EF02145 /* Pods_IOSAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IOSAppTests.framework; path = "Pods-IOSAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF8B3AF368B504A374DA4F2A6DD7365E /* SwiftChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftChart-Info.plist"; sourceTree = "<group>"; };
+		D79BCABEB6814C5C5E0192ED69F420D5 /* Nikka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nikka-umbrella.h"; sourceTree = "<group>"; };
+		D941BD19B9B469EF3F6181DB3C5F3D07 /* Nikka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nikka.modulemap; sourceTree = "<group>"; };
+		D9D0CB99F44C34FF969CB0DCEC6FBD34 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Sources/ParameterEncoding.swift; sourceTree = "<group>"; };
 		E0127603A5DB6EFE0C6066607697BB2A /* Pods-IOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		E3347A3AC787CAD624FD5C0E91B876B1 /* Pods-IOSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3971BC3D227D2671716B1142EC2DD07 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Request.swift; sourceTree = "<group>"; };
 		E544573068F21FD9CE103CB85AF42354 /* Pods-IOSAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOSAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EAB070CCCAF72189F3A0D131FF6DD343 /* SwiftChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftChart.modulemap; sourceTree = "<group>"; };
-		EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-umbrella.h"; sourceTree = "<group>"; };
+		EBBCEEC44BEBAED04D8C9FA839495AD0 /* ChartColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = Source/ChartColors.swift; sourceTree = "<group>"; };
 		F35F5050934C172BCE2E23B6B2857629 /* Pods-IOSAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IOSAppUITests.modulemap"; sourceTree = "<group>"; };
-		FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftChart-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +136,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B683B8C9F0A34F08D8B85FF3EFB289A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5C356776AF8913B94A1977653FFD55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C38DE728EB1AEA3A88E0EE2B1A7B916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5930A6D3FEFAFBF1A53B6E4DF1FF700D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8B54D219154D80AC2B25B73BA4F4E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,14 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				060268842DEA4AF7FDCDB5C1C5D5DEC4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E558D6417474367EABB19810EA936417 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49449248744B13F95460332EF0E6D6BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +209,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		29F8EA9657854C8744BAA9F5A53380A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D941BD19B9B469EF3F6181DB3C5F3D07 /* Nikka.modulemap */,
+				A37A85B7FB28C1246ABA1EF8F50F7764 /* Nikka.xcconfig */,
+				C87DBCD7B0E95E9AF36512C178156FDA /* Nikka-dummy.m */,
+				06AB0BE7CD55C965A59BAD00CB24877F /* Nikka-Info.plist */,
+				A9109946F53E578247D2D70306EB71AE /* Nikka-prefix.pch */,
+				D79BCABEB6814C5C5E0192ED69F420D5 /* Nikka-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Nikka";
+			sourceTree = "<group>";
+		};
+		3222F3BA0FB3B69DEBAFB299094DF3F8 /* Nikka */ = {
+			isa = PBXGroup;
+			children = (
+				A536661C4E16AEFA6333D43E7FD3EA78 /* Core */,
+				29F8EA9657854C8744BAA9F5A53380A5 /* Support Files */,
+			);
+			name = Nikka;
+			path = Nikka;
+			sourceTree = "<group>";
+		};
+		415C7749FAF4B80723123EB728BA528C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB627CD327045E19C6EA44BDA7B1617D /* SwiftChart.modulemap */,
+				A886DA8C49495E65278E09A68754790B /* SwiftChart.xcconfig */,
+				45028D7CAFDFC2C38C77A365843CB4F3 /* SwiftChart-dummy.m */,
+				1BD416E088ACC1E42C74BB70819D1FC0 /* SwiftChart-Info.plist */,
+				4C2E3CE15E1A6C88B8F00734515C1531 /* SwiftChart-prefix.pch */,
+				A5AB3E13C060ED046B512D1928264B3B /* SwiftChart-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftChart";
+			sourceTree = "<group>";
+		};
 		508ECDC9F7706D8F043B45592FC82014 /* Pods-IOSApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,35 +264,30 @@
 			path = "Target Support Files/Pods-IOSApp";
 			sourceTree = "<group>";
 		};
-		71B7291F733237863A94361DDBD72A96 /* Pods */ = {
+		7501F40D3C0CF6C4B7B56DC7009AD22E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				844677AADEDF0E1ABE8C8BEA308D72CE /* SwiftChart */,
+				3222F3BA0FB3B69DEBAFB299094DF3F8 /* Nikka */,
+				F6FC1A618E286B34D31857099ED7FB1B /* SwiftChart */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		844677AADEDF0E1ABE8C8BEA308D72CE /* SwiftChart */ = {
+		A536661C4E16AEFA6333D43E7FD3EA78 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2CB13F972F3B77B583645B30A456160E /* Chart.swift */,
-				1EAAC77638A2D9B88445D4DCE34BD6E1 /* ChartColors.swift */,
-				02A165B1AD01E5C3249C068D45536F95 /* ChartSeries.swift */,
-				DDFB8483963381E05DF803E39CC89874 /* Support Files */,
+				3AE87768ECFD87FED713F4D123C52ECF /* Future.swift */,
+				7BDFE05CBFD80AE884DDB6F73F9E58E6 /* HTTPProvider.swift */,
+				C52C1BF14C266A959EBD3F17CB2B0525 /* MultipartForm.swift */,
+				1E2FC41158992CECFDDDE5CF30883A83 /* NikkaError.swift */,
+				D9D0CB99F44C34FF969CB0DCEC6FBD34 /* ParameterEncoding.swift */,
+				E3971BC3D227D2671716B1142EC2DD07 /* Request.swift */,
+				793697D26A77124E5E943C8B2781A466 /* Response.swift */,
+				484DAEE7061F4FD544AA3FE099657032 /* Result.swift */,
+				46574367D57D3EA61008A3BF164E3BC1 /* Route.swift */,
+				3C7348EADF0E683A950AC809B7C59B67 /* SessionManager.swift */,
 			);
-			name = SwiftChart;
-			path = SwiftChart;
-			sourceTree = "<group>";
-		};
-		93DC99B59F980429F21B89ADBA9B4A8F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8988887730680EE7505C9B17141BDD18 /* Pods_IOSApp.framework */,
-				D1AEB516DC63706B3E3DA7EC9EF02145 /* Pods_IOSAppTests.framework */,
-				83208F0CDF9A9D549D652A123213BCC9 /* Pods_IOSAppUITests.framework */,
-				0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */,
-			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		C0684FA2B7A3E239EE691DB03DAAC163 /* Pods-IOSAppTests */ = {
@@ -233,24 +311,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				71B7291F733237863A94361DDBD72A96 /* Pods */,
-				93DC99B59F980429F21B89ADBA9B4A8F /* Products */,
+				7501F40D3C0CF6C4B7B56DC7009AD22E /* Pods */,
+				E7092DA2D001B270271D1B483467D0D2 /* Products */,
 				18B861CD1DC8F92C490BC2B096D7F9EC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		DDFB8483963381E05DF803E39CC89874 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAB070CCCAF72189F3A0D131FF6DD343 /* SwiftChart.modulemap */,
-				8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */,
-				FB198D40652FA49A604F9A7C4E9F37A2 /* SwiftChart-dummy.m */,
-				DF8B3AF368B504A374DA4F2A6DD7365E /* SwiftChart-Info.plist */,
-				9E080BC0CD223CF34EFA798FB730E0EF /* SwiftChart-prefix.pch */,
-				EDD215E44BE794458FAF6F7C69AEC9E9 /* SwiftChart-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftChart";
 			sourceTree = "<group>";
 		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
@@ -260,6 +324,30 @@
 				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E7092DA2D001B270271D1B483467D0D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				759C36A1D79C7651C27A76208E187653 /* Nikka.framework */,
+				8988887730680EE7505C9B17141BDD18 /* Pods_IOSApp.framework */,
+				D1AEB516DC63706B3E3DA7EC9EF02145 /* Pods_IOSAppTests.framework */,
+				83208F0CDF9A9D549D652A123213BCC9 /* Pods_IOSAppUITests.framework */,
+				0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6FC1A618E286B34D31857099ED7FB1B /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				52CD490438C8923E75AA4315F416E50F /* Chart.swift */,
+				EBBCEEC44BEBAED04D8C9FA839495AD0 /* ChartColors.swift */,
+				89A7F81B8DB464A55EC2DA110CCB3C31 /* ChartSeries.swift */,
+				415C7749FAF4B80723123EB728BA528C /* Support Files */,
+			);
+			name = SwiftChart;
+			path = SwiftChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,11 +361,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B52C26DB6C9995996C6775E2C43184E /* Headers */ = {
+		535C9BFA28C7F5D08A9FA85256FD740C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88965BF4BF9BB59A2A993F9E1805D434 /* Pods-IOSApp-umbrella.h in Headers */,
+				80D20D6D3E32427B24DE55BBCCEDB715 /* Pods-IOSApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +385,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCC02925F66F1BAEFC2731E9F2130141 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB5298D46EEBCB11AE4F42F98D26B04 /* Nikka-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3C7EA92C35BC59ED33F5F769B562522A /* Nikka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB4BD9AC8745AE4AD9E22F9BA7E0540 /* Build configuration list for PBXNativeTarget "Nikka" */;
+			buildPhases = (
+				FCC02925F66F1BAEFC2731E9F2130141 /* Headers */,
+				0F2B0C675FCBF83669E701B2EAD5918B /* Sources */,
+				4D5C356776AF8913B94A1977653FFD55 /* Frameworks */,
+				A172E6E30141F5BC2847335177938D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nikka;
+			productName = Nikka;
+			productReference = 759C36A1D79C7651C27A76208E187653 /* Nikka.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01C92B5C91FB34518F35871F48660483 /* Build configuration list for PBXNativeTarget "SwiftChart" */;
@@ -358,17 +472,18 @@
 		};
 		E2F0D5AB498E18F30A129AF2E1377FD7 /* Pods-IOSApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EDAD103CF115D726C5A96E24FF046B9 /* Build configuration list for PBXNativeTarget "Pods-IOSApp" */;
+			buildConfigurationList = ED2D9A16FC262992B9B10506A811F7E7 /* Build configuration list for PBXNativeTarget "Pods-IOSApp" */;
 			buildPhases = (
-				3B52C26DB6C9995996C6775E2C43184E /* Headers */,
-				6EC3AE7F3D0B37BAB669193F770C6CEF /* Sources */,
-				E558D6417474367EABB19810EA936417 /* Frameworks */,
-				A8581C64BF9E18B1A66D4D425BC7A620 /* Resources */,
+				535C9BFA28C7F5D08A9FA85256FD740C /* Headers */,
+				10BA171019D58D095C05385638DAC414 /* Sources */,
+				5930A6D3FEFAFBF1A53B6E4DF1FF700D /* Frameworks */,
+				8EFA15EE09DADF4227B1C0B0E41A81CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				375BB71905C66FC86733E4821C0BC009 /* PBXTargetDependency */,
+				63F79EF7EB64C405A407FE862EFF84EB /* PBXTargetDependency */,
+				9AC8176FF92792E4F3D1727582ABCD7E /* PBXTargetDependency */,
 			);
 			name = "Pods-IOSApp";
 			productName = "Pods-IOSApp";
@@ -385,17 +500,18 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 93DC99B59F980429F21B89ADBA9B4A8F /* Products */;
+			productRefGroup = E7092DA2D001B270271D1B483467D0D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3C7EA92C35BC59ED33F5F769B562522A /* Nikka */,
 				E2F0D5AB498E18F30A129AF2E1377FD7 /* Pods-IOSApp */,
 				9231DA1EF840CD726AC7764E84BCB1CA /* Pods-IOSAppTests */,
 				8B01F5A465AB3881899B745B50B9BF38 /* Pods-IOSAppUITests */,
@@ -419,6 +535,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EFA15EE09DADF4227B1C0B0E41A81CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		923DC915C4C0B60AEC3A935835AA08C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,7 +549,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8581C64BF9E18B1A66D4D425BC7A620 /* Resources */ = {
+		A172E6E30141F5BC2847335177938D07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,6 +559,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F2B0C675FCBF83669E701B2EAD5918B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F56ECEB5F91E2A2521418ABA6BF5EB /* Future.swift in Sources */,
+				EED1972CE0394D710E1352EBE575CFFE /* HTTPProvider.swift in Sources */,
+				B61A088C6E8F0B37D0675EC3E097ED84 /* MultipartForm.swift in Sources */,
+				87C4124BB352EE2DEC856D75EFEEFC4B /* Nikka-dummy.m in Sources */,
+				260B61788FDD60C0D19225F5FE22FAAB /* NikkaError.swift in Sources */,
+				44742113EABAC805D7DECD8484F1FB30 /* ParameterEncoding.swift in Sources */,
+				3338B8BEC4830A59065CFA3584E8AC0E /* Request.swift in Sources */,
+				DA4CF7AB6AB2053C04F80696BA13043C /* Response.swift in Sources */,
+				E622FE25C2DA3A0DF97689BD2B600F6F /* Result.swift in Sources */,
+				5F22D319C0F7E2C12471A5ECF89D9CD5 /* Route.swift in Sources */,
+				9A418119D96317A9D21EE13A3CF98C39 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA171019D58D095C05385638DAC414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBCB3BE567469F45C84C0295238759 /* Pods-IOSApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F5C1C8E53882D6F9B3DBD2C48BBCEFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,14 +601,6 @@
 				373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */,
 				F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */,
 				0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6EC3AE7F3D0B37BAB669193F770C6CEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFF4F71FA0BD4488AF0F8A2B8054F0CC /* Pods-IOSApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,11 +627,17 @@
 			target = E2F0D5AB498E18F30A129AF2E1377FD7 /* Pods-IOSApp */;
 			targetProxy = CBC772600EF4CA79628A7CDA590C95D3 /* PBXContainerItemProxy */;
 		};
-		375BB71905C66FC86733E4821C0BC009 /* PBXTargetDependency */ = {
+		63F79EF7EB64C405A407FE862EFF84EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Nikka;
+			target = 3C7EA92C35BC59ED33F5F769B562522A /* Nikka */;
+			targetProxy = B98A1C770DFCBD3A02E56373A67AFB54 /* PBXContainerItemProxy */;
+		};
+		9AC8176FF92792E4F3D1727582ABCD7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftChart;
 			target = 4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */;
-			targetProxy = BEED07CB3944C00B740744B76B169CBC /* PBXContainerItemProxy */;
+			targetProxy = 8144E03093B3516B4DA57CA2C0090C5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -533,46 +680,9 @@
 			};
 			name = Release;
 		};
-		1D0FA29E51906CB2362F2FE948DCDA37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0CE26882A2F8D58C5E8664481C601B /* Pods-IOSApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IOSApp/Pods-IOSApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IOSApp/Pods-IOSApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		393A7D6ACE3E33685194D23A99FA79B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */;
+			baseConfigurationReference = A886DA8C49495E65278E09A68754790B /* SwiftChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -605,9 +715,44 @@
 			};
 			name = Debug;
 		};
+		3B78DD045F3BA47F9D77E251DA912B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37A85B7FB28C1246ABA1EF8F50F7764 /* Nikka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nikka/Nikka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nikka/Nikka-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Nikka/Nikka.modulemap";
+				PRODUCT_MODULE_NAME = Nikka;
+				PRODUCT_NAME = Nikka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3F8D2115E6F90BB37B3DCF4421A2AEEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8752C5AEA43889E38E52AF306FA80A0A /* SwiftChart.xcconfig */;
+			baseConfigurationReference = A886DA8C49495E65278E09A68754790B /* SwiftChart.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -877,7 +1022,44 @@
 			};
 			name = Debug;
 		};
-		D25B49039CD1BA81B01C94F00EC0A59F /* Release */ = {
+		9BBA42D8B6941E1C21F2B58505B9A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0CE26882A2F8D58C5E8664481C601B /* Pods-IOSApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOSApp/Pods-IOSApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOSApp/Pods-IOSApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D79DD73F0F18020ACEB14FC3092AC7AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0127603A5DB6EFE0C6066607697BB2A /* Pods-IOSApp.release.xcconfig */;
 			buildSettings = {
@@ -915,6 +1097,42 @@
 			};
 			name = Release;
 		};
+		F9300B93F3FCE643EEB091021FBC7C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37A85B7FB28C1246ABA1EF8F50F7764 /* Nikka.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nikka/Nikka-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nikka/Nikka-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Nikka/Nikka.modulemap";
+				PRODUCT_MODULE_NAME = Nikka;
+				PRODUCT_NAME = Nikka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -936,15 +1154,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EDAD103CF115D726C5A96E24FF046B9 /* Build configuration list for PBXNativeTarget "Pods-IOSApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D0FA29E51906CB2362F2FE948DCDA37 /* Debug */,
-				D25B49039CD1BA81B01C94F00EC0A59F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -954,11 +1163,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BAB4BD9AC8745AE4AD9E22F9BA7E0540 /* Build configuration list for PBXNativeTarget "Nikka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B78DD045F3BA47F9D77E251DA912B86 /* Debug */,
+				F9300B93F3FCE643EEB091021FBC7C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C6EB8DBF8FF964FE0441FBB30EF25637 /* Build configuration list for PBXNativeTarget "Pods-IOSAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				414A5C84EAA35345FD25784F40FF4EA0 /* Debug */,
 				885E13DCA3EE350BBDD68C470091C146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2D9A16FC262992B9B10506A811F7E7 /* Build configuration list for PBXNativeTarget "Pods-IOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBA42D8B6941E1C21F2B58505B9A8D2 /* Debug */,
+				D79DD73F0F18020ACEB14FC3092AC7AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

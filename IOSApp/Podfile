@@ -5,6 +5,7 @@ target 'IOSApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SwiftChart'
+  pod 'Nikka'
   # Pods for IOSApp
 
   target 'IOSAppTests' do

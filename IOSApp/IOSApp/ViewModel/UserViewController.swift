@@ -9,12 +9,48 @@
 import Foundation
 import UIKit
 import SwiftChart
+import Nikka
+
+struct MuscleItem: Decodable {
+    var id: Int
+    var name: String
+}
+
+struct MuscleAPI: Decodable {
+    var count: Int
+    var results: [MuscleItem]
+}
 
 public struct UserViewController {
     private var user: User
     
     init() {
+        
         self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
+        MyProvider().request(Route(path:"/exercisecategory")).responseObject {( response:Response<MuscleAPI> )in
+            let res = response.result.value
+            var list:[String] = []
+            switch response.result{
+            case .success(_):
+                if let muscle = res {
+                    for item in muscle.results {
+                        switch item.name {
+                        case "Back":
+                            list.append(item.name)
+                        case "Chest":
+                            list.append(item.name)
+                        case "Arms":
+                            list.append(item.name)
+                        default:
+                            print("nothing")
+                        }
+                    }
+                }
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
+        
         self.user.newRecords(label: "Barbell bench press", weight: 0, color: COLOR_PINK, typeMuscle: "Chest")
         self.user.newRecords(label: "Cable Fly", weight: 0, color: COLOR_RED, typeMuscle: "Chest")
         self.user.newRecords(label: "Chest Dips", weight: 0, color: COLOR_BLUE, typeMuscle: "Chest")
@@ -28,6 +64,13 @@ public struct UserViewController {
         self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
         self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
         self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
+        
+        self.user.newRecords(label: "Traction", weight: 0, color: COLOR_PINK, typeMuscle: "Back")
+        self.user.newRecords(label: "Rowing dumbell", weight: 0, color: COLOR_RED, typeMuscle: "Back")
+        self.user.newRecords(label: "Rowing bar", weight: 0, color: COLOR_BLUE, typeMuscle: "Back")
+        self.user.newRecords(label: "Deadlift", weight: 0, color: COLOR_GREEN, typeMuscle: "Back")
+        self.user.newRecords(label: "Pull down", weight: 0, color: COLOR_ORANGE, typeMuscle: "Back")
+        self.user.newRecords(label: "Seated cable row", weight: 0, color: COLOR_PURPLE, typeMuscle: "Back")
     }
     
     func getMuscleDataChart(typeMuscle: String) -> DataChartSeries {
