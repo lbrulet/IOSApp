@@ -1,4 +1,4 @@
-framework module Nikka {
+module Nikka {
   umbrella header "Nikka-umbrella.h"
 
   export *

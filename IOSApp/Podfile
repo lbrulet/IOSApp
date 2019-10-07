@@ -3,7 +3,6 @@ platform :ios, '9.0'
 
 target 'IOSApp' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
   pod 'SwiftChart'
   pod 'Nikka'
   # Pods for IOSApp
@@ -14,7 +13,9 @@ target 'IOSApp' do
   end
 
   target 'IOSAppUITests' do
-    inherit! :search_paths
+    inherit! :complete
+    pod 'SwiftChart'
+    pod 'Nikka'
     # Pods for testing
   end
 

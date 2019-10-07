@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Nikka" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Nikka/Nikka.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart/SwiftChart.framework/Headers"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "Nikka" -framework "SwiftChart" -framework "UIKit"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Nikka" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Nikka/Nikka.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart/SwiftChart.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Nikka" -l"SwiftChart" -framework "Foundation" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Nikka/Nikka.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart/SwiftChart.modulemap"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Nikka" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftChart"
