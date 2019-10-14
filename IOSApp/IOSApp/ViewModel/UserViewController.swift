@@ -26,7 +26,6 @@ public struct UserViewController {
     private var userDefault: UserDefaults
     
     init() {
-<<<<<<< HEAD
         self.userDefault = UserDefaults.standard
         
         MyProvider().request(Route(path:"/exercisecategory")).responseObject {( response:Response<MuscleAPI> ) in
