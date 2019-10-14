@@ -13,29 +13,27 @@ import XCTest
 class UserTests: XCTestCase {
     
     func testUserValid() {
-        let user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        let user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
         
         XCTAssertEqual("Jean Claude", user.firstName)
         XCTAssertEqual("Van Damme", user.lastName)
-        XCTAssertEqual("user", user.image)
         XCTAssertEqual(82.0, user.weight)
         XCTAssertEqual(185.5, user.size)
         XCTAssertEqual(Gender.male, user.gender)
     }
     
     func testUserIsNotValid() {
-        let user = User(firstName: "Jean", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        let user = User(firstName: "Jean", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male,  birthDate: "1997/05/08")
         
         XCTAssertNotEqual("Luc", user.firstName)
         XCTAssertNotEqual("Brulet Damme", user.lastName)
-        XCTAssertNotEqual("back2", user.image)
         XCTAssertNotEqual(82.5, user.weight)
         XCTAssertNotEqual(185.2, user.size)
         XCTAssertNotEqual(Gender.female, user.gender)
     }
     
     func testUserSetWidth() {
-        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male,  birthDate: "1997/05/08")
         
         XCTAssertEqual(82.0, user.weight)
         user.setWeight(weight: 90.0)
@@ -43,7 +41,7 @@ class UserTests: XCTestCase {
     }
     
     func testUserSetWidthFail() {
-        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male,  birthDate: "1997/05/08")
         
         XCTAssertEqual(82.0, user.weight)
         user.setWeight(weight: 90.0)
@@ -51,7 +49,7 @@ class UserTests: XCTestCase {
     }
     
     func testUserSetSize() {
-        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male,  birthDate: "1997/05/08")
         
         XCTAssertEqual(185.5, user.size)
         user.setSize(size: 190.0)
@@ -59,7 +57,7 @@ class UserTests: XCTestCase {
     }
     
     func testUserSetSizeFail() {
-        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male)
+        var user = User(firstName: "Jean Claude", lastName: "Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
         
         XCTAssertEqual(185.5, user.size)
         user.setSize(size: 190.0)

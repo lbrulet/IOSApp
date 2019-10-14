@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JSb-93-Jhe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JSb-93-Jhe">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,6 +32,9 @@
                                 <rect key="frame" x="299" y="140" width="40" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="xzV-FV-tlK" eventType="touchUpInside" id="gcs-fB-cLw"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-fK-k67" customClass="Chart" customModule="SwiftChart">
                                 <rect key="frame" x="20" y="184.5" width="374" height="352"/>
@@ -130,7 +133,7 @@
                                 <rect key="frame" x="27" y="126" width="361" height="30"/>
                                 <color key="backgroundColor" red="0.20784313725490197" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="Delete my account">
+                                <state key="normal" title="Reset my account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -593,7 +596,7 @@
         <scene sceneID="gfN-D8-eAn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EXG-0k-JtL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" id="b1B-OQ-fJW"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="homepage" selectedImage="homepage" id="b1B-OQ-fJW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YbI-q4-oMC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -612,7 +615,7 @@
         <scene sceneID="j8y-rC-G9U">
             <objects>
                 <navigationController id="wgU-af-KMN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="4xP-lv-ZpH"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="controls" selectedImage="controls" id="4xP-lv-ZpH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b92-cK-Lfx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -905,7 +908,9 @@
         <scene sceneID="uQ1-pd-XHM">
             <objects>
                 <navigationController id="BbY-VQ-Wt8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Charts" id="GpF-ur-gcI"/>
+                    <tabBarItem key="tabBarItem" title="Charts" image="line-chart-2" selectedImage="line-chart-2" id="GpF-ur-gcI">
+                        <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Tl-ZG-7EF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -922,7 +927,7 @@
         <scene sceneID="KPx-Zk-yC3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHN-6x-vMX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="ZP8-K2-1CL"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user-1" selectedImage="user-1" id="ZP8-K2-1CL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YQe-sy-IrF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -941,6 +946,10 @@
     <resources>
         <image name="back2" width="370" height="167"/>
         <image name="chest2" width="600" height="400"/>
+        <image name="controls" width="16" height="16"/>
+        <image name="homepage" width="16" height="16"/>
+        <image name="line-chart-2" width="16" height="16"/>
         <image name="user" width="500" height="755"/>
+        <image name="user-1" width="16" height="16"/>
     </resources>
 </document>

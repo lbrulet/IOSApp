@@ -1,4 +1,4 @@
-framework module SwiftChart {
+module SwiftChart {
   umbrella header "SwiftChart-umbrella.h"
 
   export *

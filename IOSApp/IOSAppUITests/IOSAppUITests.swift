@@ -9,8 +9,11 @@
 import XCTest
 
 class IOSAppUITests: XCTestCase {
+    var app: XCUIApplication!
 
     override func setUp() {
+        super.setUp()
+
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -31,4 +34,13 @@ class IOSAppUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testOther() {
+        let app = XCUIApplication()
+
+        let firstChild = app.collectionViews.children(matching:.any).element(boundBy: 0)
+        if firstChild.exists {
+            firstChild.tap()
+        }
+
+    }
 }

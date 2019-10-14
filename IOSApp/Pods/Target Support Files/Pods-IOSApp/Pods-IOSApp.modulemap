@@ -1,4 +1,4 @@
-framework module Pods_IOSApp {
+module Pods_IOSApp {
   umbrella header "Pods-IOSApp-umbrella.h"
 
   export *

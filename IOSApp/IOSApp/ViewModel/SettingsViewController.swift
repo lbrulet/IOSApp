@@ -18,9 +18,11 @@ class SettingsViewController: UIViewController {
     
     @IBAction func showAlert(_ sender: Any) {
         let alertController = UIAlertController(title: "Alert", message:
-            "Are you sure you want to delete your account ? All your datas will be lost", preferredStyle: .alert)
+            "Are you sure you want to reset your account ? All new datas will be lost", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "No", style: .default))
-        alertController.addAction(UIAlertAction(title: "Yes ", style: .default))
+        alertController.addAction(UIAlertAction(title: "Yes ", style: .default,  handler: {(action:UIAlertAction!) in
+                user =  UserViewController()
+            }))
         
         self.present(alertController, animated: true, completion: nil)
     }
