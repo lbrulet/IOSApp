@@ -38,21 +38,21 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         // check if Touch ID is available
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             // 3
-            let reason = "Authenticate with Touch ID"
+            let reason = "Biometris authentication needed."
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                 {(success, error) in
                     // 4
                     if success {
-                        self.showAlertController("Touch ID Authentication Succeeded")
+                        self.showAlertController("Authentication Succeeded.")
                     }
                     else {
-                        self.showAlertController("Touch ID Authentication Failed")
+                        self.showAlertController("Authentication Failed.")
                     }
             })
         }
             // 5
         else {
-            showAlertController("Touch ID not available")
+            showAlertController("Biometrics authentication not available.")
         }
         
         self.tableView.delegate = self
