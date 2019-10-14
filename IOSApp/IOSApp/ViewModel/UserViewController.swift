@@ -12,22 +12,52 @@ import SwiftChart
 
 public struct UserViewController {
     private var user: User
+    private var userDefault: UserDefaults
     
     init() {
-        self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
-        self.user.newRecords(label: "Barbell bench press", weight: 0, color: COLOR_PINK, typeMuscle: "Chest")
-        self.user.newRecords(label: "Cable Fly", weight: 0, color: COLOR_RED, typeMuscle: "Chest")
-        self.user.newRecords(label: "Chest Dips", weight: 0, color: COLOR_BLUE, typeMuscle: "Chest")
-        self.user.newRecords(label: "Declined Barbell Bench Press", weight: 0, color: COLOR_GREEN, typeMuscle: "Chest")
-        self.user.newRecords(label: "Inclined Barbell Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Chest")
-        self.user.newRecords(label: "Dumbell Squeeze Press", weight: 0, color: COLOR_PURPLE, typeMuscle: "Chest")
+        self.userDefault = UserDefaults.standard
         
-        self.user.newRecords(label: "Hammer curl", weight: 0, color: COLOR_PINK, typeMuscle: "Biceps")
-        self.user.newRecords(label: "Ez bar curl", weight: 0, color: COLOR_RED, typeMuscle: "Biceps")
-        self.user.newRecords(label: "Curl", weight: 0, color: COLOR_BLUE, typeMuscle: "Biceps")
-        self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
-        self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
-        self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
+        if self.userDefault.object(forKey: "User") != nil
+        {
+            let data = NSData(data: self.userDefault.object(forKey: "User") as! Data)
+            do {
+                self.user = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(Data(referencing: data)) as! User
+                } catch {
+                    self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
+                    self.user.newRecords(label: "Barbell bench press", weight: 0, color: COLOR_PINK, typeMuscle: "Chest")
+                    self.user.newRecords(label: "Cable Fly", weight: 0, color: COLOR_RED, typeMuscle: "Chest")
+                    self.user.newRecords(label: "Chest Dips", weight: 0, color: COLOR_BLUE, typeMuscle: "Chest")
+                    self.user.newRecords(label: "Declined Barbell Bench Press", weight: 0, color: COLOR_GREEN, typeMuscle: "Chest")
+                    self.user.newRecords(label: "Inclined Barbell Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Chest")
+                    self.user.newRecords(label: "Dumbell Squeeze Press", weight: 0, color: COLOR_PURPLE, typeMuscle: "Chest")
+                    
+                    self.user.newRecords(label: "Hammer curl", weight: 0, color: COLOR_PINK, typeMuscle: "Biceps")
+                    self.user.newRecords(label: "Ez bar curl", weight: 0, color: COLOR_RED, typeMuscle: "Biceps")
+                    self.user.newRecords(label: "Curl", weight: 0, color: COLOR_BLUE, typeMuscle: "Biceps")
+                    self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
+                    self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
+                    self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
+                    selfStore()
+            }
+        }
+        else
+        {
+            self.user = User(firstName: "Jean", lastName: "Claude Van Damme", image: "user", weight: 82.0, size: 185.5, gender: Gender.male, birthDate: "1997/05/08")
+            self.user.newRecords(label: "Barbell bench press", weight: 0, color: COLOR_PINK, typeMuscle: "Chest")
+            self.user.newRecords(label: "Cable Fly", weight: 0, color: COLOR_RED, typeMuscle: "Chest")
+            self.user.newRecords(label: "Chest Dips", weight: 0, color: COLOR_BLUE, typeMuscle: "Chest")
+            self.user.newRecords(label: "Declined Barbell Bench Press", weight: 0, color: COLOR_GREEN, typeMuscle: "Chest")
+            self.user.newRecords(label: "Inclined Barbell Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Chest")
+            self.user.newRecords(label: "Dumbell Squeeze Press", weight: 0, color: COLOR_PURPLE, typeMuscle: "Chest")
+            
+            self.user.newRecords(label: "Hammer curl", weight: 0, color: COLOR_PINK, typeMuscle: "Biceps")
+            self.user.newRecords(label: "Ez bar curl", weight: 0, color: COLOR_RED, typeMuscle: "Biceps")
+            self.user.newRecords(label: "Curl", weight: 0, color: COLOR_BLUE, typeMuscle: "Biceps")
+            self.user.newRecords(label: "Pullover", weight: 0, color: COLOR_GREEN, typeMuscle: "Biceps")
+            self.user.newRecords(label: "Close Grip Bench Press", weight: 0, color: COLOR_ORANGE, typeMuscle: "Biceps")
+            self.user.newRecords(label: "Reverse curl", weight: 0, color: COLOR_PURPLE, typeMuscle: "Biceps")
+            selfStore()
+        }
     }
     
     func getMuscleDataChart(typeMuscle: String) -> DataChartSeries {
@@ -52,6 +82,14 @@ public struct UserViewController {
         }
         return data
     }
+    
+    mutating func selfStore() {
+        do {
+            self.userDefault.setValue(try NSKeyedArchiver.archivedData(withRootObject: self.user, requiringSecureCoding: false), forKey: "User")
+        } catch {
+            print("Error while storing")
+        }
+    }
  
     func getImage() -> UIImage? {
         return self.user.image
@@ -59,34 +97,42 @@ public struct UserViewController {
     
     mutating func setImage(image: UIImage) {
         self.user.setImage(image: image)
+        selfStore()
     }
     
     mutating func setWeight(weight: Float) {
         self.user.setWeight(weight: weight)
+        selfStore()
     }
     
     mutating func setSize(size: Float) {
         self.user.setSize(size: size)
+        selfStore()
     }
     
     mutating func setGender(gender: Gender) {
         self.user.setGender(gender: gender)
+        selfStore()
     }
     
     mutating func setBirthDate(date:String) {
         self.user.setBirthDate(birthDate: date)
+        selfStore()
     }
     
     mutating func setFirstName(firstName: String) {
         self.user.setFirstName(firstName: firstName)
+        selfStore()
     }
     
     mutating func setLastName(lastName: String) {
         self.user.setLastName(lastName: lastName)
+        selfStore()
     }
     
     mutating func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
         self.user.newRecords(label: label, weight: weight, color: color, typeMuscle: typeMuscle)
+        selfStore()
     }
     
     mutating func getUser() -> User {

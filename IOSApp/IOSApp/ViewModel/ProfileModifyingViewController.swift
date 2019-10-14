@@ -42,7 +42,7 @@ class ProfileModifyingViewController: UIViewController, UIPickerViewDelegate, UI
     }
     
     @objc func takingPic() {
-        imageVc.sourceType = .camera //replace by .photoLibrary if ran in an emulator
+        imageVc.sourceType = .photoLibrary //replace by .photoLibrary if ran in an emulator
         imageVc.allowsEditing = true
         imageVc.delegate = self
         present(imageVc, animated: true)
@@ -50,8 +50,16 @@ class ProfileModifyingViewController: UIViewController, UIPickerViewDelegate, UI
     
     @IBAction func saveInfos(_ sender: Any) {
         user.setImage(image: CircularProfilImage.image!)
-        user.setSize(size: (Float)(sizeField.text!)!)
+        if (Float(sizeField.text!) != nil) {
+            user.setSize(size: (Float)(sizeField.text!)!)
+        } else {
+            user.setSize(size: 0.0)
+        }
+        if (Float(weightField.text!) != nil) {
         user.setWeight(weight: (Float)(weightField.text!)!)
+        } else {
+            user.setWeight(weight: 0.0)
+        }
         user.setGender(gender: Gender.allCases[picker.selectedRow(inComponent: 0)])
         user.setBirthDate(date: birthDateField.text!)
         _ = navigationController?.popToRootViewController(animated: true)

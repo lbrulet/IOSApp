@@ -9,12 +9,20 @@
 import Foundation
 import UIKit
 
+func archiveWeightCollector(weightCollectorArray : [WeightCollector]) -> Data {
+    return try! NSKeyedArchiver.archivedData(withRootObject: weightCollectorArray as Array, requiringSecureCoding: false)
+}
+
+func loadWeightCollectorArray(unarchivedObject: Data) -> [WeightCollector] {
+    return try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(unarchivedObject) as! [WeightCollector]
+}
+
 enum Gender:String, CaseIterable {
     case male = "Male", female = "Female"
     static var allCases: [Gender] = [.male, .female]
 }
 
-struct WeightCollector {
+class WeightCollector: NSObject, NSCoding {
     var label:String
     var status:String
     var color:UIColor
@@ -29,12 +37,27 @@ struct WeightCollector {
         self.typeMuscle = typeMuscle
     }
     
-    mutating func newRecord(weight: Double) {
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(label, forKey: "Label")
+        aCoder.encode(status, forKey: "Status")
+        aCoder.encode(color, forKey: "Color")
+        aCoder.encode(typeMuscle, forKey: "TypeMuscle")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        label = aDecoder.decodeObject(forKey: "Label") as! String
+        status = aDecoder.decodeObject(forKey: "Status") as! String
+        color = aDecoder.decodeObject(forKey: "Color") as! UIColor
+        typeMuscle = aDecoder.decodeObject(forKey: "TypeMuscle") as! String
+        weights.append((x: 1, y: 2.0))
+    }
+    
+    func newRecord(weight: Double) {
         weights.append((x: Double(weights.count + 1), y: weight))
     }
 }
 
-struct User {
+class User: NSObject, NSCoding {
     var image:UIImage
     var firstName:String
     var lastName:String
@@ -56,7 +79,31 @@ struct User {
         self.birthDate = self.dateFormatter.date(from: birthDate)!
     }
     
-    mutating func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
+    required init(coder aDecoder: NSCoder) {
+        self.dateFormatter.dateFormat = "yyyy/MM/dd"
+        firstName = aDecoder.decodeObject(forKey: "FirstName") as! String
+        lastName = aDecoder.decodeObject(forKey: "LastName") as! String
+        image = aDecoder.decodeObject(forKey: "ProfilPicture") as! UIImage
+        gender = Gender(rawValue: aDecoder.decodeObject(forKey: "Gender") as! String)!
+        weight = aDecoder.decodeFloat(forKey: "Weight")
+        size = aDecoder.decodeFloat(forKey: "Size")
+        birthDate = aDecoder.decodeObject(forKey: "BirthDate") as! Date
+        weights = loadWeightCollectorArray(unarchivedObject: aDecoder.decodeObject(forKey: "Weights") as! Data)
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(firstName, forKey: "FirstName")
+        aCoder.encode(lastName, forKey: "LastName")
+        aCoder.encode(image, forKey: "ProfilPicture")
+        aCoder.encode(weight, forKey: "Weight")
+        aCoder.encode(size, forKey: "Size")
+        aCoder.encode(gender.rawValue, forKey: "Gender")
+        aCoder.encode(birthDate, forKey: "BirthDate")
+        aCoder.encode(archiveWeightCollector(weightCollectorArray: weights), forKey: "Weights")
+        
+    }
+    
+    func newRecords(label: String, weight: Double, color: UIColor?, typeMuscle: String?) {
         var isExist = false;
         print(label)
         for (index, item) in self.weights.enumerated(){
@@ -87,31 +134,31 @@ struct User {
         return String(age)
     }
     
-    mutating func setImage(image: UIImage) {
+    func setImage(image: UIImage) {
         self.image = image
     }
     
-    mutating func setWeight(weight: Float) {
+    func setWeight(weight: Float) {
         self.weight = weight
     }
     
-    mutating func setSize(size: Float) {
+    func setSize(size: Float) {
         self.size = size
     }
     
-    mutating func setGender(gender: Gender) {
+    func setGender(gender: Gender) {
         self.gender = gender
     }
     
-    mutating func setFirstName(firstName: String) {
+    func setFirstName(firstName: String) {
         self.firstName = firstName
     }
     
-    mutating func setLastName(lastName: String) {
+    func setLastName(lastName: String) {
         self.lastName = lastName
     }
     
-    mutating func setBirthDate(birthDate: String) {
-        self.birthDate = self.dateFormatter.date(from: birthDate)!
+    func setBirthDate(birthDate: String) {
+        self.birthDate = self.dateFormatter.date(from: birthDate) ?? dateFormatter.date(from: "1900/01/01")!
     }
 }
